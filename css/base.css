@@ -19,11 +19,8 @@ html {
 }
 
 body {
-    height: 100vh;
     width: 100vw;
-    background-image: url("images/background1.png");
-    background-size:  cover;
-    background-color: #4053FF; /* podes deixar esta linha como prevenção caso a imagem demore a carregar*/
+    background-color: #000000;
 }
 
 a {
@@ -35,26 +32,21 @@ h1, h2, h3, h4, h5, h6 {
     font-family: Poppins-bold, sans-serif;
     font-weight: bold;
 }
+p, button{
+  font-family: Hind-light, sans-serif;
+  color:#ffffff;
+
+}
 ul{
 list-style-type: none;
 }
 
-
-/* podes colocar a info diretamente na tag header e usar display flex para centrar o logo em vez de margem. Se utilizares este método (em que a altura é fixa)
-depois consegues centrar o resto da info no meio da página*/
 header {
     height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-
-/*.logo-center {
-    width: 10%;
-    margin: 2vh auto;
-    / padding: 2vh 0; podes colocar o 2vh na linha de cima e tem o mesmo resultado
-}*/
 
 @media screen and (max-width: 600px) {
     .section-main {
