@@ -1,0 +1,28 @@
+.about{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.about h1{
+  font-size: 3rem;
+  margin: 5% auto;
+  text-transform: uppercase;
+}
+.cont_about{
+  display: flex;
+  width:55%;
+  justify-content: space-between;
+}
+.text{
+  width:40%;
+}
+.text h3{
+  text-transform: uppercase;
+}
+.text p{
+  font-weight: 600;
+  margin-top: 5%;
+}
