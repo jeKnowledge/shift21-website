@@ -70,11 +70,12 @@ position: relative;
 button:focus { outline: none; }
 button{
   border: none;
-  background-image: url("images/button.png");
+  background-image: url("../images/button.png");
   background-repeat: no-repeat;
   width:243px;
   height: 64px;
   border-radius: 24px;
   color:white;
   font-size: 1.2em;
+  cursor: pointer;
 }

@@ -94,14 +94,14 @@ nav img{
 .gradient_background{
   height: 100%;
   width: 100%;
-  background-image: url("images/background1.png");
+  background-image: url("../images/background1.png");
   background-size: 100%;
   background-color: #000000;
 }
 
 .lines_background{
   height: 295vh;
-  background-image: url("images/background_all.png");
+  background-image: url("../images/background_all.png");
   background-repeat: no-repeat;
   background-size: 100vw;
 

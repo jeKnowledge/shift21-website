@@ -11,6 +11,7 @@
   margin: 5% auto;
   text-transform: uppercase;
 }
+
 .cont_about{
   display: flex;
   width:55%;
@@ -25,4 +26,7 @@
 .text p{
   font-weight: 600;
   margin-top: 5%;
+}
+.logo{
+  height: 10%;
 }
