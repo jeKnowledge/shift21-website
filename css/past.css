@@ -1,3 +1,9 @@
+.lines_background{
+  height: 270vh;
+  background-image: url("../images/background_index_past.png");
+  background-repeat: no-repeat;
+  background-size: 100vw;
+}
 .past, .partners{
   display: flex;
   align-items: center;
@@ -46,7 +52,7 @@ transition: 0.3s;
 }
 .partner-section{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   margin: 4rem 0;
   width:60%;

@@ -1,3 +1,10 @@
+.lines_background{
+  height: 100vh;
+  background-image: url("../images/background_about.png");
+  background-repeat: no-repeat;
+  background-size: 100vw;
+
+}
 .about{
   display: flex;
   align-items: center;
@@ -14,19 +21,26 @@
 
 .cont_about{
   display: flex;
+  align-items: bottom;
   width:55%;
   justify-content: space-between;
+
 }
 .text{
-  width:40%;
+  width:45%;
+  padding-bottom: 5%;
+  border-bottom: 8px solid  #EF376A;
 }
+
 .text h3{
   text-transform: uppercase;
 }
 .text p{
   font-weight: 600;
-  margin-top: 5%;
+  margin-top: 6%;
 }
 .logo{
-  height: 10%;
+  height: 10vh;
+  margin-bottom: 6%;
+  cursor: pointer;
 }

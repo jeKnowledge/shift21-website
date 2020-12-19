@@ -44,14 +44,15 @@
 
 
     <div class="hero">
-      <h1 onclick="">Make it APPen</h1>
+      <h1 id="make">Make it APPen</h1>
+      <img  src="images/tigre.png" id="tiger" alt="tigre">
     </div>
 
   </section>
 
     <div class="lines_background">
       <section class="what">
-        <img class="outline" id="shift" src="images/shift_outline.svg">
+        <img class="outline" id="shift_" src="images/shift_outline.svg">
         <div class="cont">
             <h1>What is it?</h1>
             <div class="content-text">
@@ -134,8 +135,8 @@
         <div class="made">
           <div id="made_info">
             <div class="made_img">
-              <img src="images/jeK.svg" alt="logo_jek">
-              <img src="images/nei.svg" alt="logo_nei">
+              <img src="images/jeK.svg" onclick="window.location.href = 'https://jeknowledge.pt'" alt="logo_jek">
+              <img src="images/nei.svg" onclick="window.location.href = 'https://nei.dei.uc.pt'" alt="logo_nei">
             </div>
               <p>Made with <a style="color:#EF376A">love</a> by us</p>
           </div>
@@ -148,4 +149,21 @@
 
 
 </body>
+<script>
+
+$("#tiger")
+.mouseover(function(){
+  $("#tiger").css('z-index', 2);
+  $("#tiger").css('opacity', 1);
+  $("#make").css('opacity', 0);
+})
+.mouseout(function(){
+  $("#tiger").css('z-index', 0);
+  $("#tiger").css('opacity', 0.6);
+  $("#make").css('opacity', 1)
+
+});
+
+</script>
+
 </html>

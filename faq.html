@@ -50,8 +50,7 @@
     <div class="cont">
       <div class="question">
         <p>How can i learn more about this hackathon?</p>
-        <img  src="images/open.svg" class="show">
-        <img src="images/close.svg" id="close">
+        <img  src="images/open.svg" id="icone">
       </div>
       <div class="answer">
           <p>You can explore our website and visit our social networks for more information! <br>If you still have any personal question or doubt that you wish to ask us, you can send an email to geral@shiftappens.com</p>
@@ -61,8 +60,7 @@
     <div class="cont">
       <div class="question">
         <p>Can I be part of it?</p>
-        <img src="images/open.svg" class="show">
-        <img src="images/close.svg" id="close">
+        <img src="images/open.svg" id="icone">
       </div>
       <div class="answer">
         <p>Any student, professional or enthusiast can be part of it!</p>
@@ -72,8 +70,7 @@
     <div class="cont">
       <div class="question">
         <p>How can I purchase my ticket?</p>
-        <img src="images/open.svg" class="show">
-        <img src="images/close.svg" id="close">
+        <img src="images/open.svg" id="icone">
       </div>
       <div class="answer">
         <p>We're working on it! Tickets will be available on our website very soon, so stay tuned!</p>
@@ -83,8 +80,7 @@
     <div class="cont">
       <div class="question">
         <p>What do I do when I arrive at the Event?</p>
-        <img src="images/open.svg" class="show">
-        <img src="images/close.svg" id="close">
+        <img src="images/open.svg" id="icone">
       </div>
       <div class="answer">
         <p>The check-in takes place at the entry of the event's venue.
@@ -95,8 +91,7 @@
     <div class="cont">
       <div class="question">
         <p>What can I do at Shift APPens?</p>
-        <img src="images/open.svg" class="show">
-        <img src="images/close.svg" id="close">
+        <img src="images/open.svg" id="icone">
       </div>
       <div class="answer">
         <p>In this Hackathon, you can create an application with your work team.
@@ -107,8 +102,7 @@
     <div class="cont">
       <div class="question">
         <p>Who can I participate with?</p>
-        <img src="images/open.svg" id="show">
-        <img src="images/close.svg" id="close">
+        <img src="images/open.svg" id="icone">
       </div>
       <div class="answer">
         <p>You can participate with whoever you want!
@@ -119,8 +113,7 @@
     <div class="cont">
       <div class="question">
         <p>How is it going to be?</p>
-        <img id="show" src="images/open.svg" >
-        <img id="close" src="images/close.svg" >
+        <img id="show" src="images/open.svg" id="icone">
       </div>
       <div class="answer">
         <p>It’s going to be awesome! You have 48 hours to create an application, make friends, trade knowledge, walk around our beautiful city and have fun!
@@ -163,8 +156,8 @@
         <div class="made">
           <div id="made_info">
             <div class="made_img">
-              <img src="images/jeK.svg" alt="logo_jek">
-              <img src="images/nei.svg" alt="logo_nei">
+              <img src="images/jeK.svg" onclick="window.location.href = 'https://jeknowledge.pt'" alt="logo_jek">
+              <img src="images/nei.svg" onclick="window.location.href = 'https://nei.dei.uc.pt'" alt="logo_nei">
             </div>
               <p>Made with <a style="color:#EF376A">love</a> by us</p>
           </div>
@@ -179,8 +172,7 @@
 </body>
 <script>
   var question = document.getElementsByClassName("question");
-  var open = document.getElementById("open");
-  var close = document.getElementById("close");
+  var icone= document.getElementById("icone");
   var i;
 
 for (i = 0; i < question.length; i++) {
@@ -188,10 +180,12 @@ for (i = 0; i < question.length; i++) {
   question[i].addEventListener("click", function() {
     this.classList.toggle("active");
 
+    var abre =this.nextElementSibling;
     var answer = this.nextElementSibling;
+
     if (answer.style.display === "block") {
       answer.style.display = "none";
-      open.style.display="none";
+
     } else {
       answer.style.display = "block";
 

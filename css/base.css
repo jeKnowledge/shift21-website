@@ -91,21 +91,9 @@ nav img{
 .menu a:active{
   color:#d0c6ff;
 }
-.gradient_background{
-  height: 100%;
-  width: 100%;
-  background-image: url("../images/background1.png");
-  background-size: 100%;
-  background-color: #000000;
-}
 
-.lines_background{
-  height: 295vh;
-  background-image: url("../images/background_all.png");
-  background-repeat: no-repeat;
-  background-size: 100vw;
 
-}
+
 /* FOOTER */
 footer{
   background-image: linear-gradient(#151032, #180F16);
@@ -154,6 +142,7 @@ footer{
 }
 .made_img img{
   height: 6vh;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 600px) {
