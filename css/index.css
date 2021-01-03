@@ -44,8 +44,8 @@
 
 /* MAIN */
 .lines_background {
-  height: 295vh;
-  background-image: url("../images/background_index_past.png");
+  height: 550vh;
+  background-image: url("../images/background_index.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -53,22 +53,27 @@
 .outline {
   position: relative;
 }
+#sa_{
+  width: 18%;
+  bottom: -5.5%;
+  left: -25%;
+}
 
 #shift_ {
   width: 25%;
-  bottom: -5%;
+  bottom: -5.5%;
   left: -20%;
 }
 
 #appens {
   width: 40%;
-  bottom: -5%;
+  bottom: -5.5%;
   left: -13%;
 }
 
 #vintevinte {
   width: 25%;
-  bottom: -10%;
+  bottom: -11%;
   left: -20%;
 }
 
@@ -76,6 +81,34 @@
   margin-top: 5%;
   width: 45vw;
 }
+#content-gallery{
+  margin-top: 5%;
+  width: 45vw;
+  position: relative;
+
+}
+
+.mySlides{
+  display: none;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  color: white;
+  font-weight: 400;
+  font-size: 25px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+}
+
 
 .content-text p {
   font-weight: 600;
@@ -85,7 +118,7 @@
 .memories h1,
 .how h1,
 .newsletter h1 {
-  font-size: 3rem;
+  font-size: 3.4rem;
 }
 
 .how,
@@ -114,8 +147,8 @@ button {
   border: none;
   background-image: url("../images/button.png");
   background-repeat: no-repeat;
-  width: 243px;
-  height: 64px;
+  width: 35%;
+  height: 55px;
   border-radius: 24px;
   color: white;
   font-size: 1.2em;

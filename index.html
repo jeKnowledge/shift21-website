@@ -25,7 +25,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+
   <title>Shift Appens</title>
+  <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/6002684bae4a40458e05587b2/6ca50c8712130f493b52ff1ed.js");</script>
 </head>
 <body>
   <section class="gradient_background">
@@ -47,6 +49,17 @@
       </div>
   </section>
   <div class="lines_background">
+    <section class="what">
+      <img class="outline" id="sa_" src="images/sa_outline.svg">
+      <div class="cont">
+        <h1>Shift Appens</h1>
+        <div class="content-text">
+          <p> Shift APPens is an event organized with love by NEI and jeKnowledge.
+            We bring students and workers from all over the country to the city of Coimbra.
+            We can promise you fun, competition, challenges  and friendships!  If you have never participated, come join us! We are much more than a Hackathon, <br>do you really want to miss it?</p>
+        </div>
+      </div>
+    </section>
     <section class="what">
       <img class="outline" id="shift_" src="images/shift_outline.svg">
       <div class="cont">
@@ -71,21 +84,30 @@
       <img class="outline" id="appens" src="images/appens_outline.svg">
       <div class="cont">
         <h1>Memories</h1>
-        <div class="content-text">
-          <p> Shift APPens is a Hackathon where participants have 48 hours to create an application, defending it in a
-            final pitch in front of a carefully chosen jury.</p>
-          <p>We aim to foster healthy competition and an exchange of knowledge from the tech world among the
-            participants, all taking place in a relaxed environment. We gather developers, designers and entrepreneurs
-            of different technological fields, from north to south of the country.</p>
-          <p> On the way to its 7th edition, our Hackathon is organized by the University of Coimbra's Computer Science
-            Students Organization and by jeKnowledge, a junior enterprise of the Faculty of Sciences and Technology of
-            the University of Coimbra.
-            <p>We can promise you fun, competition and friendships! If you have never participated, come join us!</p>
+        <div id="content-gallery">
+            <a class="prev" onclick="plusSlides(-1)">PREV</a>
+                <div class="mySlides">
+                  <img src="images/memories/1.png" style="width:100%">
+                </div>
+
+              <div class="mySlides">
+                <img src="images/memories/2.png" style="width:100%" >
+              </div>
+
+              <div class="mySlides">
+                <img src="images/memories/3.png" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <img src="images/memories/4.png" style="width:100%">
+              </div>
+
+          <a class="next" onclick="plusSlides(1)">NEXT</a>
         </div>
       </div>
     </section>
     <section class="how">
-      <img class="outline" id="vintevinte" src="images/2020_outline.svg">
+      <img class="outline" id="vintevinte" src="images/2021_outline.svg">
       <div class="cont">
         <h1>How is it?</h1>
         <div class="content-text">
@@ -93,6 +115,35 @@
             promotion of a healthy competition,
             participating in this event is a great opportunity to develop not only hard skills, but also soft skills,
             like team spirit, creativity, and the ability to work under the pressure of the 48 hour timing.</p>
+        </div>
+      </div>
+    </section>
+    <section class="how">
+      <div class="cont">
+        <h1>When & Where?</h1>
+        <div class="content-text">
+          <p> Once more, our amazing Hackathon is going to take place in the stunning city of Coimbra, in the Pavillon Eng. Jorge Anjinho, placed in a central area of the city, provided by good transport options and a shopping center, just 7 minutes away. We also make sure you'll have all safety and health conditions, according to the DGS regulations, due to Covid-19.</p>
+        </div>
+      </div>
+    </section>
+    <section class="how">
+      <div class="cont">
+        <h1>Staying with us?</h1>
+        <div class="content-text">
+          <p> Worried about where to sleep? Don’t be! It’s completely of our interest to provide you with the
+            best conditions and comfort possible. This year it won’t be possible to have participants staying in the arena. However...</p>
+        </div>
+      </div>
+    </section>
+    <section class="how">
+      <div class="cont">
+        <h1>How to get there</h1>
+        <div class="content-text">
+          <p> If you arrive at Coimbra by bus or by train (station of Coimbra-B), you can catch the yellow bus no.5, from SMTUC network, and get out at “Carolina Michaellis”. If you arrive in the city by train, (station of Coimbra-A), you can catch the yellow bus no.7T and also get out at “Carolina Michaellis”, or the bus no.24T and get out at “Escola Superior de Educação”. You’ll have to walk a small distance, until you get to Pavilion Eng. Jorge Anginho (R. Infanta Dona Maria, 3030-329 Coimbra, 40.206258, -8.402081).
+You can always decide to take a taxi/uber/bolt, and choose the “Pavilhão Eng. Jorge Anginho” as your destination.
+
+
+</p>
         </div>
       </div>
     </section>
@@ -166,5 +217,31 @@
       $("#make").css('opacity', 1)
 
     });
+
+
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  slides[slideIndex-1].style.display = "block";
+
+
+
+}
+
 </script>
 </html>
