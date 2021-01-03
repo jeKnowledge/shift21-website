@@ -44,3 +44,18 @@
   margin-bottom: 6%;
   cursor: pointer;
 }
+/* ------------------ MOBILE ------------------ */
+@media screen and (max-width: 670px) {
+
+  .cont_about{
+    display: block;
+    width:90%;
+  }
+  .text{
+    width:60%;
+    margin-right: 0;
+  }
+  .lines_background{
+    height: 190vh;
+  }
+}

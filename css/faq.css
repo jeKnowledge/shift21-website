@@ -17,6 +17,9 @@
   margin: 5% auto;
   text-transform: uppercase;
 }
+#mobile{
+  display: none;
+}
 .cont{
   padding: 2%;
   font-size: 1em;
@@ -44,4 +47,24 @@
   display: flex;
   justify-content:  space-between;
   margin-bottom: 1%;
+}
+/* ------------------ MOBILE ------------------ */
+@media screen and (max-width: 670px) {
+  #pc{
+    display: none;
+    margin: 0;
+  }
+  #mobile{
+    display: block;
+    font-size: 2.8em;
+  }
+  .faqs h1{
+    margin: 5% auto;
+  }
+  .cont{
+    width:70%;
+      margin-bottom: 4%;
+  }
+
+
 }

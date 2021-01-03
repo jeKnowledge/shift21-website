@@ -11,16 +11,6 @@
   font-size: 4rem;
   cursor: pointer;
 }
-
-.what,
-.memories {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
 .gradient_background {
   width: 100vw;
   height: 100vh;
@@ -43,6 +33,14 @@
 }
 
 /* MAIN */
+.shift ,.what,
+.memories {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 .lines_background {
   height: 550vh;
   background-image: url("../images/background_index.png");
@@ -108,20 +106,15 @@
 .next {
   right: 0;
 }
-
-
 .content-text p {
   font-weight: 600;
 }
 
-.what h1,
-.memories h1,
-.how h1,
-.newsletter h1 {
+.cont h1 {
   font-size: 3.4rem;
 }
 
-.how,
+.how,.when, .stay, .how,
 .newsletter {
   height: 50vh;
   width: 100vw;
@@ -131,7 +124,7 @@
   justify-content: center;
 }
 
-.content-text input {
+.content-text-news input {
   background: #352E33 80%;
   border: 0;
   border-radius: 24px;
@@ -153,4 +146,33 @@ button {
   color: white;
   font-size: 1.2em;
   cursor: pointer;
+}
+/* ------------------ MOBILE ------------------ */
+@media screen and (max-width: 670px) {
+#tiger{
+  width: 80vw;
+  left:10% !important;
+}
+.cont h1 {
+  font-size: 2.5rem;
+}
+.content-text , #content-gallery{
+  width: 65vw;
+}
+
+.content-text-news input{
+width:100%;
+height: 6vh;
+border-radius: 14px;}
+.content-text-news button{
+  height: 6vh;
+
+width:80%;
+height: 35px;
+border-radius: 14px;
+margin-top: 5%;}
+
+
+
+
 }

@@ -74,3 +74,28 @@ transition: 0.3s;
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
 }
+/* ------------------ MOBILE ------------------ */
+@media screen and (max-width: 670px) {
+.past h1, .partners h1{
+  font-size: 2.4rem;
+}
+.partner-section {
+  margin: 2rem 0;
+}
+.partner-section , .partners_text{
+  width:70%;
+  text-align: left;
+}
+.partner-section a{
+  background-color:white;
+  width: 3.5rem;
+  height: 3rem;
+  border-radius: 9px;
+  margin-bottom: 0.7rem;
+}
+.year a{
+  font-size: 1.2rem;
+}
+.lines_background{
+  height: 170vh;
+}
