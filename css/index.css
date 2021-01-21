@@ -104,7 +104,6 @@
   position: absolute;
   z-index: 2;
   left:10%;
-  width: 40%;
   transition: 2s;
   width: 80%;
 }
@@ -201,12 +200,16 @@ button:focus {
   margin-top: 10%;
   width: 70vw;
 }
+.images{
+  left:0;
+  width: 100%;
+}
 #controls{
   width: 50%;
   align-items: center;
   left:50%;
   transform: translate(-50% , -50%);
-  margin-top: 10%;
+  margin-top: 18%;
 }
 .prev,
 .next {
@@ -232,20 +235,20 @@ button:focus {
 
 #sa_{
   width: 40%;
+  top:4%;
 }
 #shift_ {
-  width: 55%;
+  width: 50%;
+  top:4%;
 }
 #appens {
-    width: 70%;
+    width: 60%;
+    top:4%;
 }
 #vintevinteum {
   width: 40%;
+  top:4%;
 }
-#content-gallery{
-  flex-wrap: wrap;
-}
-
 
 }
 @media screen and (max-width: 800px) {
