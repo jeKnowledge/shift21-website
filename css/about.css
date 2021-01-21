@@ -61,7 +61,8 @@
   .cont_about{
     flex-direction: column;
     width:90%;
-    margin: 5% auto;
+    margin-top : 5% ;
+    margin-bottom: 18%;
     justify-content: center;
     align-items: center;
   }

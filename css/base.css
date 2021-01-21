@@ -4,6 +4,10 @@
   src: url('../css/fonts/Poppins/Poppins-bold.ttf');
 }
 @font-face {
+  font-family: Poppins;
+  src: url('../css/fonts/Poppins/Poppins-Regular.ttf');
+}
+@font-face {
   font-family: Hind;
   src: url('../css/fonts/Hind/Hind-Medium.ttf');
 }
@@ -176,16 +180,17 @@ footer{
       grid-template-columns: 1fr 1fr;
       position: absolute;
 }
-#shift{z-index: 4;}
+#shift{
+  z-index: 4;
+}
 #nav img:nth-child(2), #nav img:nth-child(3) {
         padding: 4vh 0;
-
 }
 #nav img:nth-child(2) {
   margin-left:8vw;
 }
-#nav img:nth-child(3) {
 
+#nav img:nth-child(3) {
   margin-right:8vw;
 }
 
@@ -199,11 +204,12 @@ footer{
   }
 
    #menu{
-     z-index: 2;
+     z-index: 3;
     display: none;
     width:100%;
     padding: 20vh 8vw 20vh 8vw ;
     position: absolute;
+    height: 100vh;
   }
   #menu a{
     width: 100vw;
@@ -241,8 +247,12 @@ footer{
 
     footer{
       display: flex;
-        height:65vh;
-        flex-direction: column;
+      height:50vh;
+      flex-direction: column;
+      padding: 0 8%;
+    }
+    .contact , .social , .made{
+      height: 33%;
     }
 
     #shift_icon{
@@ -252,12 +262,7 @@ footer{
     .social{
       order:0;
     }
-    #taikai_mobile{
-      width: 40%;
-      display: block;
-      align-self: center;
-      order:1;
-    }
+
     .contact{
       order:2;
     }
@@ -271,19 +276,26 @@ footer{
     .made_img{
       display: flex;
       justify-content: space-around;
+
     }
 
     .social_img{
       display: flex;
       justify-content: space-between;
       align-items: center;
-      width: 45%;
+      width: 50%;
+      flex-wrap: wrap;
     }
-
+    #taikai_mobile{
+      width: 100%;
+      display: block;
+      padding-top: 10%;
+    }
 
     .contact{
       text-align: center;
     }
+
     footer .social_text{
       display: none;
     }

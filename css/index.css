@@ -36,6 +36,7 @@
 .lines_background {
   background-image: url("../images/background_index.png");
   background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .whole {
@@ -162,6 +163,7 @@ button:focus {
   color: white;
   font-size: 1.2em;
   cursor: pointer;
+  font-family: Poppins;
 }
 
 
@@ -202,14 +204,14 @@ button:focus {
 #controls{
   width: 50%;
   align-items: center;
-  top: 120%;
   left:50%;
   transform: translate(-50% , -50%);
+  margin-top: 10%;
 }
 .prev,
 .next {
   font-weight: 700;
-  font-size: 12px;
+  font-size: 18px;
 }
 
 #form {
@@ -226,7 +228,6 @@ button:focus {
   width:70%;
   height: 5vh;
   font-size: 0.9rem;
-  font-family: Poppins;
 }
 
 #sa_{
