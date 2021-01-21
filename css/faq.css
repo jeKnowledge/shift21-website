@@ -57,11 +57,14 @@
 }
 /* ------------------ MOBILE ------------------ */
 @media screen and (max-width: 670px) {
+  #icon{
+    z-index: 1;
+  }
   .lines_background{
     height: auto;
     background-image: url("../images/background_past_mobile.png");
-
   }
+  
   .faqs{
     padding-top: 12vh;
     padding-bottom:10vh;

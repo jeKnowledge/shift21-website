@@ -148,7 +148,14 @@ footer{
 #made_info img{
   height: 6vh;
   cursor: pointer;
-  align-items: flex-end;
+}
+#made_info img:nth-child(2){
+  padding-left: 5%;
+
+}
+.made_img{
+  display: flex;
+  justify-content: flex-end;
 }
 #menu_icon{
   display: none;
@@ -169,7 +176,7 @@ footer{
       grid-template-columns: 1fr 1fr;
       position: absolute;
 }
-#shift{z-index: 5;}
+#shift{z-index: 4;}
 #nav img:nth-child(2), #nav img:nth-child(3) {
         padding: 4vh 0;
 
@@ -257,6 +264,14 @@ footer{
     .made{
       order:3;
     }
+    #made_info img:nth-child(2){
+      padding-left: 0;
+
+    }
+    .made_img{
+      display: flex;
+      justify-content: space-around;
+    }
 
     .social_img{
       display: flex;
@@ -272,9 +287,7 @@ footer{
     footer .social_text{
       display: none;
     }
-    footer #made_info{
-      justify-content: center;
-    }
+
 }
 
 @media screen and (max-width: 400px) {
