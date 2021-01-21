@@ -54,6 +54,7 @@
 }
 .answer p{
   font-weight: Hind-light;
+  padding-top: 1%;
 }
 /* ------------------ MOBILE ------------------ */
 @media screen and (max-width: 670px) {
