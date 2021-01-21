@@ -71,25 +71,25 @@ padding-bottom:20%;
 
 #sa_{
   width: 18%;
-  bottom: -7%;
+  bottom: -8%;
   left: -25%;
 }
 
 #shift_ {
   width: 25%;
-  bottom: -7%;
+  bottom: -8%;
   left: -20%;
 }
 
 #appens {
   width: 40%;
-  bottom: -7%;
+  bottom: -8%;
   left: -13%;
 }
 
 #vintevinteum {
   width: 25%;
-  bottom: -11%;
+  bottom: -12%;
   left: -20%;
 }
 
@@ -239,19 +239,19 @@ button:focus {
 
 #sa_{
   width: 40%;
-  top:4%;
+  top:5%;
 }
 #shift_ {
   width: 50%;
-  top:4%;
+  top:5%;
 }
 #appens {
-    width: 60%;
+    width: 65%;
     top:4%;
 }
 #vintevinteum {
   width: 40%;
-  top:4%;
+  top:6%;
 }
 
 }
