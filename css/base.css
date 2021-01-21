@@ -140,7 +140,9 @@ footer{
   display: flex;
   width:70%;
   justify-content: space-between;
-
+}
+.social_text a:hover{
+  color:#c2b5ff;
 }
 
 #made_info img{
@@ -158,29 +160,42 @@ footer{
 
 @media screen and (max-width: 600px) {
   #nav{
-      height: 8vh;
+      height: 11vh;
       position: absolute;
       width:100vw;
+      grid-template-columns: 1fr 1fr;
+      position: absolute;
 }
-  #nav img:nth-child(2), #nav img:nth-child(3) {
-        position: fixed;
-        padding: 4vh 8vw;
+#shift{z-index: 5;}
+#nav img:nth-child(2), #nav img:nth-child(3) {
+        padding: 4vh 0;
+
 }
+#nav img:nth-child(2) {
+  margin-left:8vw;
+}
+#nav img:nth-child(3) {
+
+  margin-right:8vw;
+}
+
   #tigre_mobile{
-  padding-bottom: 4vh;
-  padding-right: 65vw;
+    padding-top: 5vh;
+    padding-left: 5vw;
 }
-  #shift{
-  width: 40%;
-}
+
   #taikai{
     display: none;
   }
 
-  #nav #menu{
+   #menu{
     display: none;
-    width:100vh;
+    width:100%;
     padding: 20vh 8vw 20vh 8vw ;
+    position: absolute;
+  }
+  #menu a{
+    width: 100vw;
   }
 
   #menu_icon{

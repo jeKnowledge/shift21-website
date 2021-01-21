@@ -10,6 +10,7 @@
   justify-content: center;
   flex-direction: column;
   width: 100vw;
+  margin-bottom: 10vh;
 }
 
 .faqs h1{

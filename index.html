@@ -166,10 +166,10 @@ You can always decide to take a taxi/uber/bolt, and choose the “Pavilhão Eng.
       <div class="cont">
         <h1>Newsletter</h1>
         <div class="content-text">
-          <p id="subs">Subscribe to our newsletter </p>
+          <p id="txt_newsletter">Subscribe to our newsletter </p>
           <div id="form">
             <input type="email">
-            <button>
+            <button onclick=newsletterClick()>
               <span id="subs">Subscribe now</span>
             </button>
           </div>
@@ -239,6 +239,15 @@ You can always decide to take a taxi/uber/bolt, and choose the “Pavilhão Eng.
 
     });
 
+      var txt= document.getElementById("txt_newsletter");
+      var but = document.getElementById("subs");
+function newsletterClick(){
+  txt.innerHTML = "Welcome to the family! Please check your email.";
+  but.innerHTML = "Thank you!";
+
+
+    }
+
 
 
 var slideIndex = 1;
@@ -255,13 +264,26 @@ function showSlides(n) {
 
   if (n > slides.length) {
     slideIndex = 1}
+
   if (n < 1) {
     slideIndex = slides.length}
+
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+
+   slides[i].style.zIndex = "0";
+   slides[i].style.transform = "rotate(0deg)";
+
   }
 
-  slides[slideIndex-1].style.display = "block";
+  slides[slideIndex-1].style.zIndex = "1";
+  if(slideIndex%4==0){
+  slides[slideIndex-1].style.transform = "rotate(4deg)";
+  slides[slideIndex-1].style.opacity = "1";
+}
+else{
+  slides[slideIndex-1].style.transform = "rotate(-4deg)"
+  slides[slideIndex-1].style.opacity = "1";
+}
 
 }
 
