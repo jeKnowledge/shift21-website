@@ -159,6 +159,9 @@ footer{
 /* ------------------ MOBILE ------------------ */
 
 @media screen and (max-width: 600px) {
+#scene{
+  z-index: 1;
+}
   #nav{
       height: 11vh;
       position: absolute;
@@ -189,6 +192,7 @@ footer{
   }
 
    #menu{
+     z-index: 2;
     display: none;
     width:100%;
     padding: 20vh 8vw 20vh 8vw ;
