@@ -1,5 +1,5 @@
 .lines_background{
-  height: 145vh;
+  height: auto;
   background-image: url("../images/background_index_past.png");
   background-repeat: no-repeat;
   background-size: 100vw;
