@@ -23,6 +23,7 @@
   <!-- <link rel="stylesheet" href="css/colors.css"> -->
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/faq.css">
+  <script src="showMenu.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
   <title>Shift Appens</title>
@@ -31,16 +32,23 @@
 <body>
 
     <div class="lines_background">
-  <nav>
-    <img id="taikai" onclick="window.location.href = 'https://taikai.network/en';" src="images/taikai.svg" alt="logo_taikai">
-    <img id="shift" onclick="window.location.href = 'index.html';" src="images/logo.svg" alt="logo">
+      <nav>
+        <div id="nav">
 
-    <div class="menu">
-      <a href="faq.html">FAQ</a>
-      <a href="past.html">PAST</a>
-      <a href="about.html">ABOUT US</a>
-    </div>
-  </nav>
+          <img id="taikai" onclick="window.location.href = 'https://taikai.network/en';" src="images/taikai.svg"
+            alt="logo_taikai">
+          <img id="shift" onclick="window.location.href = 'index.html';" src="images/logo.svg" alt="logo">
+          <img id="menu_icon" onclick=showMenu() src="images/menu.png" alt="menu">
+
+        <div id="menu">
+          <a href="about.html">ABOUT US</a>
+          <a href="past.html">PAST</a>
+          <a href="faq.html">FAQ</a>
+          <img id="tigre_mobile" src="images/tigre_mobile.svg" alt="tiger">
+
+        </div>
+  </div>
+      </nav>
 <main>
 <section class="faqs">
 
@@ -51,7 +59,7 @@
     <div class="cont">
       <div class="question">
         <p>How can i learn more about this hackathon?</p>
-        <img  src="images/open.svg" id="icone">
+        <img class="icon" src="images/open.svg" alt="icone">
       </div>
       <div class="answer">
           <p>You can explore our website and visit our social networks for more information! <br>If you still have any personal question or doubt that you wish to ask us, you can send an email to geral@shiftappens.com</p>
@@ -61,7 +69,7 @@
     <div class="cont">
       <div class="question">
         <p>Can I be part of it?</p>
-        <img src="images/open.svg" id="icone">
+        <img class="icon" src="images/open.svg" alt="icone">
       </div>
       <div class="answer">
         <p>Any student, professional or enthusiast can be part of it!</p>
@@ -71,7 +79,7 @@
     <div class="cont">
       <div class="question">
         <p>How can I purchase my ticket?</p>
-        <img src="images/open.svg" id="icone">
+        <img class="icon" src="images/open.svg" alt="icone">
       </div>
       <div class="answer">
         <p>We're working on it! Tickets will be available on our website very soon, so stay tuned!</p>
@@ -81,7 +89,7 @@
     <div class="cont">
       <div class="question">
         <p>What do I do when I arrive at the Event?</p>
-        <img src="images/open.svg" id="icone">
+        <img class="icon" src="images/open.svg" alt="icone">
       </div>
       <div class="answer">
         <p>The check-in takes place at the entry of the event's venue.
@@ -92,7 +100,7 @@
     <div class="cont">
       <div class="question">
         <p>What can I do at Shift APPens?</p>
-        <img src="images/open.svg" id="icone">
+        <img class="icon" src="images/open.svg" alt="icone">
       </div>
       <div class="answer">
         <p>In this Hackathon, you can create an application with your work team.
@@ -103,7 +111,7 @@
     <div class="cont">
       <div class="question">
         <p>Who can I participate with?</p>
-        <img src="images/open.svg" id="icone">
+        <img class="icon" src="images/open.svg" alt="icone">
       </div>
       <div class="answer">
         <p>You can participate with whoever you want!
@@ -114,7 +122,7 @@
     <div class="cont">
       <div class="question">
         <p>How is it going to be?</p>
-        <img id="show" src="images/open.svg" id="icone">
+        <img class="icon" src="images/open.svg" alt="icone">
       </div>
       <div class="answer">
         <p>It’s going to be awesome! You have 48 hours to create an application, make friends, trade knowledge, walk around our beautiful city and have fun!
@@ -136,6 +144,7 @@
               <br>geral@shiftappens.com</p>
           </div>
         </div>
+        <img id="taikai_mobile" onclick="window.location.href = 'https://taikai.network/en';" src="images/taikai.svg" alt="logo_taikai">
         <div class="social">
           <div class="social_img">
             <a class="social_i" href="https://twitter.com/shiftappens"> <img src="images/twitter.svg" alt="logo_twitter"> </a>
@@ -156,23 +165,19 @@
         </div>
         <div class="made">
           <div id="made_info">
-            <div class="made_img">
               <img src="images/jeK.svg" onclick="window.location.href = 'https://jeknowledge.pt'" alt="logo_jek">
               <img src="images/nei.svg" onclick="window.location.href = 'https://nei.dei.uc.pt'" alt="logo_nei">
-            </div>
               <p>Made with <a style="color:#EF376A">love</a> by us</p>
           </div>
         </div>
 
       </footer>
-
-
   </main>
-
 
 </body>
 <script>
   var question = document.getElementsByClassName("question");
+  var question_img = document.getElementsByClassName("icon");
   var icone= document.getElementById("icone");
   var i;
 
@@ -181,14 +186,20 @@ for (i = 0; i < question.length; i++) {
   question[i].addEventListener("click", function() {
     this.classList.toggle("active");
 
+    var myimg = this.getElementsByTagName('img')[0];
+
+
     var abre =this.nextElementSibling;
     var answer = this.nextElementSibling;
+    var img= this.nextElementSibling;
 
     if (answer.style.display === "block") {
       answer.style.display = "none";
+      myimg.src= "images/open.svg"
 
     } else {
       answer.style.display = "block";
+      myimg.src= "images/close.svg"
 
     }
   });

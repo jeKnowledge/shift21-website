@@ -23,6 +23,7 @@
   <!-- <link rel="stylesheet" href="css/colors.css"> -->
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/about.css">
+  <script src="showMenu.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
   <title>Shift Appens</title>
@@ -31,14 +32,21 @@
 <body>
 <section class="lines_background">
   <nav>
-    <img id="taikai" onclick="window.location.href = 'https://taikai.network/en';" src="images/taikai.svg" alt="logo_taikai">
-    <img id="shift" onclick="window.location.href = 'index.html';" src="images/logo.svg" alt="logo">
+    <div id="nav">
 
-    <div class="menu">
-      <a href="faq.html">FAQ</a>
-      <a href="past.html">PAST</a>
+      <img id="taikai" onclick="window.location.href = 'https://taikai.network/en';" src="images/taikai.svg"
+        alt="logo_taikai">
+      <img id="shift" onclick="window.location.href = 'index.html';" src="images/logo.svg" alt="logo">
+      <img id="menu_icon" onclick=showMenu() src="images/menu.png" alt="menu">
+
+    <div id="menu">
       <a href="about.html">ABOUT US</a>
+      <a href="past.html">PAST</a>
+      <a href="faq.html">FAQ</a>
+      <img id="tigre_mobile" src="images/tigre_mobile.svg" alt="tiger">
+
     </div>
+</div>
   </nav>
 <main>
   <section class="about">
@@ -49,18 +57,15 @@
       <div class="text">
         <img class="logo" onclick="window.location.href = 'https://nei.dei.uc.pt'" src="images/nei.svg" alt="nei">
         <h3>Núcleo de Estudantes <br> de informática</h3>
-        <p>The enrichment of student’s experience during their time in University of Coimbra is one of the main principles of NEI/AAC.
-          The main goals of this student's core are to represent the students of Informatic Engineering and Multimedia Design and to regularly organize formative,
-          cultural and sports activities and events like ShiftAPPens, ENEI, ENED, OpenDEI and Summer University.</p>
+        <p>The Informatics Students Nucleus from the Academic Association of Coimbra is a group that aims to represent students in order to enrich and strengthen their experience and academic path. Thus, the students have the ability to develop their knowledge, at various levels, during their course at the University of Coimbra.
+          <br><br>NEI has the habit of performing several cultural, sports, recreational and formative activities. It also publishes and provides support in the organization of various events, promoting different spaces for free use.</p>
       </div>
 
       <div class="text">
         <img class="logo" onclick="window.location.href = 'https://jeknowledge.pt'" src="images/jek.svg" alt="jek" >
         <h3>jeknowledge</h3>
-        <p>jeKnowledge was founded in 2008 with the purpose to provide the students from various courses from the FCTUC the possibility to use
-          the knowledge they acquired at the University in the global market, through an enormous panoply of internal and external projects.
-          It’s entirely formed by students from the area of Science and Technology with the ambition to go further, and believes that
-          that step is given through real projects, for real clients.</p>
+        <p>jeKnowledge is a Junior Company of FCTUC that was founded in 2008 in order to provide students the opportunity to apply their academic knowledge either in external or internal projects. These students attend several courses at the Faculty of Science and Technology, from Bachelor to Master.
+          <br><br>At jeKnowledge there are opportunities to work in multidisciplinary teams, as well as to develop new skills applicable in real situations.</p>
       </div>
 
 
@@ -83,6 +88,8 @@
               <br>geral@shiftappens.com</p>
           </div>
         </div>
+        <img id="taikai_mobile" onclick="window.location.href = 'https://taikai.network/en';" src="images/taikai.svg" alt="logo_taikai">
+
         <div class="social">
           <div class="social_img">
             <a class="social_i" href="https://twitter.com/shiftappens"> <img src="images/twitter.svg" alt="logo_twitter"> </a>

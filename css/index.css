@@ -33,14 +33,6 @@
 }
 
 /* MAIN */
-.shift ,.what,
-.memories {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
 .lines_background {
   height: 550vh;
   background-image: url("../images/background_index.png");
@@ -48,9 +40,32 @@
   background-size: cover;
 }
 
+.whole {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.half {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.content-text p {
+  font-weight: 600;
+}
+
+.cont h1 {
+  font-size: 3.4rem;
+}
+/*titulos outline*/
 .outline {
   position: relative;
 }
+
 #sa_{
   width: 18%;
   bottom: -5.5%;
@@ -69,7 +84,7 @@
   left: -13%;
 }
 
-#vintevinte {
+#vintevinteum {
   width: 25%;
   bottom: -11%;
   left: -20%;
@@ -79,56 +94,50 @@
   margin-top: 5%;
   width: 45vw;
 }
+
 #content-gallery{
+  display: flex;
   margin-top: 5%;
   width: 45vw;
-  position: relative;
-
+  justify-content: space-between;
+  align-items: center;
+}
+#controls {
+  display: flex;
 }
 
 .mySlides{
   display: none;
 }
-
+.next{
+  order:3;
+}
 .prev,
 .next {
   cursor: pointer;
-  position: absolute;
-  top: 50%;
   width: auto;
   color: white;
-  font-weight: 400;
-  font-size: 25px;
+  font-weight: 700;
+  font-size: 20px;
   user-select: none;
   -webkit-user-select: none;
+  font: Poppins;
+  margin: 0 1%;
+  border-bottom: 3px solid  #ffffff;
 }
-
-.next {
-  right: 0;
+#subs{
+  padding-bottom: 2%;
 }
-.content-text p {
-  font-weight: 600;
-}
-
-.cont h1 {
-  font-size: 3.4rem;
-}
-
-.how,.when, .stay, .how,
-.newsletter {
-  height: 50vh;
-  width: 100vw;
+#form{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
-.content-text-news input {
+#form input {
   background: #352E33 80%;
   border: 0;
   border-radius: 24px;
-  width: 23vw;
+  width: 65%;
   height: 7vh;
 }
 
@@ -136,43 +145,99 @@ button:focus {
   outline: none;
 }
 
-button {
+#form button {
   border: none;
   background-image: url("../images/button.png");
   background-repeat: no-repeat;
-  width: 35%;
+  width: auto;
+  width: 30%;
   height: 55px;
   border-radius: 24px;
   color: white;
   font-size: 1.2em;
   cursor: pointer;
 }
+
+
 /* ------------------ MOBILE ------------------ */
 @media screen and (max-width: 670px) {
+
+  .lines_background {
+    background-image: url("../images/background_index_mobile.png");
+  }
+#make{
+  font-size: 2.5rem;
+}
+
 #tiger{
   width: 80vw;
   left:10% !important;
+  top:20% !important;
 }
-.cont h1 {
-  font-size: 2.5rem;
+.lines_background {
+  height: 580vh;
 }
-.content-text , #content-gallery{
-  width: 65vw;
+.whole{
+  height: 85vh;
+}
+.half{
+  height: 65vh;
+}
+.cont h1{
+  font-size: 1.9em;
+}
+.content-text p , button{
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+.content-text, #content-gallery, .content-text-news{
+  margin-top: 10%;
+  width: 70vw;
 }
 
-.content-text-news input{
-width:100%;
-height: 6vh;
-border-radius: 14px;}
-.content-text-news button{
-  height: 6vh;
+#form {
+  flex-direction: column;
+}
+#form input{
+  width: 100%;
+  height: 5vh;
+  border-radius: 16px;
+}
+#form button{
+  margin-top: 8%;
+  border-radius: 12px;
+  width:70%;
+  height: 5vh;
+  font-size: 0.9rem;
+  font-family: Poppins;
+}
 
-width:80%;
-height: 35px;
-border-radius: 14px;
-margin-top: 5%;}
+#sa_{
+  width: 40%;
+}
+#shift_ {
+  width: 55%;
+}
+#appens {
+    width: 70%;
+}
+#vintevinteum {
+  width: 40%;
+}
+#content-gallery{
+  flex-wrap: wrap;
+}
+.prev{
+  order:2;
+}
 
-
+.prev,
+.next {
+  font-weight: 700;
+  font-size: 12px;
+  margin: 1% 1%;
+  border-bottom: 1px solid  #ffffff;
+}
 
 
 }

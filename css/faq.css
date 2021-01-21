@@ -48,8 +48,24 @@
   justify-content:  space-between;
   margin-bottom: 1%;
 }
+.question p{
+  font-family: Hind;
+}
+.answer p{
+  font-weight: Hind-light;
+}
 /* ------------------ MOBILE ------------------ */
 @media screen and (max-width: 670px) {
+  .lines_background{
+    height: auto;
+    background-image: url("../images/background_past_mobile.png");
+
+  }
+  .faqs{
+    padding-top: 12vh;
+    padding-bottom:10vh;
+    height: auto;
+  }
   #pc{
     display: none;
     margin: 0;
@@ -57,14 +73,24 @@
   #mobile{
     display: block;
     font-size: 2.8em;
+    text-align: left;
   }
   .faqs h1{
     margin: 5% auto;
+      width:70%;
   }
   .cont{
     width:70%;
-      margin-bottom: 4%;
+    margin-bottom: 4%;
+    padding:4%;
   }
+  .cont p{
+    width:80%;
+    font-size: 0.9rem;
+
+  }
+
+
 
 
 }

@@ -22,6 +22,7 @@
   <!-- <link rel="stylesheet" href="css/colors.css"> -->
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/index.css">
+  <script src="showMenu.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
@@ -33,15 +34,21 @@
   <section class="gradient_background">
     <main>
       <nav>
-        <img id="taikai" onclick="window.location.href = 'https://taikai.network/en';" src="images/taikai.svg"
-          alt="logo_taikai">
-        <img id="shift" onclick="window.location.href = 'index.html';" src="images/logo.svg" alt="logo">
+        <div id="nav">
 
-        <div class="menu">
-          <a href="faq.html">FAQ</a>
-          <a href="past.html">PAST</a>
+          <img id="taikai" onclick="window.location.href = 'https://taikai.network/en';" src="images/taikai.svg"
+            alt="logo_taikai">
+          <img id="shift" onclick="window.location.href = 'index.html';" src="images/logo.svg" alt="logo">
+          <img id="menu_icon" onclick=showMenu() src="images/menu.png" alt="menu">
+
+        <div id="menu">
           <a href="about.html">ABOUT US</a>
+          <a href="past.html">PAST</a>
+          <a href="faq.html">FAQ</a>
+          <img id="tigre_mobile" src="images/tigre_mobile.svg" alt="tiger">
+
         </div>
+  </div>
       </nav>
 
       <div id="scene" class="hero">
@@ -49,9 +56,10 @@
         <img data-depth="1" src="images/tigre.png" id="tiger" alt="tigre">
       </div>
   </section>
+
   <div class="lines_background">
 
-    <section class="shift">
+    <section class="section whole">
       <img class="outline" id="sa_" src="images/sa_outline.svg">
       <div class="cont">
         <h1>Shift Appens</h1>
@@ -62,7 +70,8 @@
         </div>
       </div>
     </section>
-    <section class="what">
+
+    <section class="section whole">
       <img class="outline" id="shift_" src="images/shift_outline.svg">
       <div class="cont">
         <h1>What is it?</h1>
@@ -82,34 +91,38 @@
         </div>
       </div>
     </section>
-    <section class="memories">
+
+    <section class="section whole">
       <img class="outline" id="appens" src="images/appens_outline.svg">
       <div class="cont">
         <h1>Memories</h1>
         <div id="content-gallery">
+
+
             <a class="prev" onclick="plusSlides(-1)">PREV</a>
-                <div class="mySlides">
+            <a class="next" onclick="plusSlides(1)">NEXT</a>
+
+                <div class="images">
                   <img src="images/memories/1.png" style="width:100%">
                 </div>
 
-              <div class="mySlides">
+              <div class="images">
                 <img src="images/memories/2.png" style="width:100%" >
               </div>
 
-              <div class="mySlides">
+              <div class="images">
                 <img src="images/memories/3.png" style="width:100%">
               </div>
 
-              <div class="mySlides">
+              <div class="images">
                 <img src="images/memories/4.png" style="width:100%">
               </div>
 
-          <a class="next" onclick="plusSlides(1)">NEXT</a>
         </div>
       </div>
     </section>
-    <section class="how">
-      <img class="outline" id="vintevinte" src="images/2021_outline.svg">
+    <section class="section half">
+      <img class="outline" id="vintevinteum" src="images/2021_outline.svg">
       <div class="cont">
         <h1>How is it?</h1>
         <div class="content-text">
@@ -120,7 +133,7 @@
         </div>
       </div>
     </section>
-    <section class="when">
+    <section class="section half">
       <div class="cont">
         <h1>When & Where?</h1>
         <div class="content-text">
@@ -128,7 +141,7 @@
         </div>
       </div>
     </section>
-    <section class="stay">
+    <section class="section half">
       <div class="cont">
         <h1>Staying with us?</h1>
         <div class="content-text">
@@ -137,7 +150,7 @@
         </div>
       </div>
     </section>
-    <section class="how">
+    <section class="section half">
       <div class="cont">
         <h1>How to get there</h1>
         <div class="content-text">
@@ -149,19 +162,22 @@ You can always decide to take a taxi/uber/bolt, and choose the “Pavilhão Eng.
         </div>
       </div>
     </section>
-    <section class="newsletter">
+    <section class="section half">
       <div class="cont">
         <h1>Newsletter</h1>
-        <div class="content-text-news">
-          <p>Subscribe to our newsletter </p>
-          <input type="email">
-          <button>
-            <span id="subs">Subscribe now</span>
-          </button>
+        <div class="content-text">
+          <p id="subs">Subscribe to our newsletter </p>
+          <div id="form">
+            <input type="email">
+            <button>
+              <span id="subs">Subscribe now</span>
+            </button>
+          </div>
         </div>
       </div>
     </section>
   </div>
+
   <footer>
     <div class="contact">
       <div id=cont_info>
@@ -171,6 +187,8 @@ You can always decide to take a taxi/uber/bolt, and choose the “Pavilhão Eng.
           <br>geral@shiftappens.com</p>
       </div>
     </div>
+    <img id="taikai_mobile" onclick="window.location.href = 'https://taikai.network/en';" src="images/taikai.svg" alt="logo_taikai">
+
     <div class="social">
       <div class="social_img">
         <a class="social_i" href="https://twitter.com/shiftappens"> <img src="images/twitter.svg" alt="logo_twitter">
@@ -201,6 +219,7 @@ You can always decide to take a taxi/uber/bolt, and choose the “Pavilhão Eng.
         <p>Made with <a style="color:#EF376A">love</a> by us</p>
       </div>
     </div>
+
   </footer>
   </main>
 </body>
@@ -229,19 +248,20 @@ showSlides(slideIndex);
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
+
 function showSlides(n) {
   var i;
-  var slides = document.getElementsByClassName("mySlides");
+  var slides = document.getElementsByClassName("images");
 
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
+  if (n > slides.length) {
+    slideIndex = 1}
+  if (n < 1) {
+    slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
 
   slides[slideIndex-1].style.display = "block";
-
-
 
 }
 

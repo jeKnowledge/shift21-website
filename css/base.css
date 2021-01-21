@@ -49,7 +49,7 @@ header {
     align-items: center;
 }
 /* NAVBAR */
-nav{
+#nav{
     top: 0;
     bottom: 0;
     width: 100%;
@@ -59,7 +59,7 @@ nav{
     background-color: var(--color-white);
     box-sizing: border-box;
 }
-nav img{
+#nav img{
   cursor: pointer;
   align-self: center;
   margin:auto;
@@ -71,27 +71,29 @@ nav img{
 #taikai{
   width:15%;
 }
-.menu{
+#menu{
   margin: auto;
   display: flex;
 }
 
-.menu a, .social_text a{
+#menu a , .social_text a{
   display: -webkit-box;
   text-transform: uppercase;
   align-self: center;
   color: white;
 }
-.menu a:nth-child(2) {
+#menu a:nth-child(2) {
     margin: 0 2.5rem;
 }
-.menu a:hover{
+#menu a:hover{
   color:#c2b5ff;
 }
-.menu a:active{
+#menu a:active{
   color:#d0c6ff;
 }
-
+#tigre_mobile{
+  display: none;
+}
 
 
 /* FOOTER */
@@ -140,14 +142,65 @@ footer{
   justify-content: space-between;
 
 }
-.made_img img{
+
+#made_info img{
   height: 6vh;
   cursor: pointer;
+  align-items: flex-end;
 }
+#menu_icon{
+  display: none;
+}
+#taikai_mobile{
+  display: none;
+}
+/* ------------------ MOBILE ------------------ */
 
 @media screen and (max-width: 600px) {
-  h1{
-    font-size: 2.8em;
+  #nav{
+      height: 8vh;
+      position: absolute;
+      width:100vw;
+}
+  #nav img:nth-child(2), #nav img:nth-child(3) {
+        position: fixed;
+        padding: 4vh 8vw;
+}
+  #tigre_mobile{
+  padding-bottom: 4vh;
+  padding-right: 65vw;
+}
+  #shift{
+  width: 40%;
+}
+  #taikai{
+    display: none;
+  }
+
+  #nav #menu{
+    display: none;
+    width:100vh;
+    padding: 20vh 8vw 20vh 8vw ;
+  }
+
+  #menu_icon{
+    right:0%;
+    z-index:4;
+    align-self: flex-end;  }
+
+  #menu a{
+    display: block;
+    color:white;
+    font-size: 3rem;
+    font-family: Poppins-bold, sans-serif;
+    padding-bottom: 5%;
+  }
+
+  #menu a:nth-child(2) {
+    margin: 0 ;
+}
+  #menu_icon{
+    display: inline;
   }
     .section-main {
         width: 80%;
@@ -157,20 +210,51 @@ footer{
         font-size: 1.5rem;
         line-height: 28px;
     }
+
     /* FOOTER */
+
     footer{
-      display: block;
-      height:50vh;
+      display: flex;
+        height:65vh;
+        flex-direction: column;
     }
-    .contact , .social , .made{
-      height:  30%;
+
+    #shift_icon{
+      display: none;
+    }
+
+    .social{
+      order:0;
+    }
+    #taikai_mobile{
+      width: 40%;
+      display: block;
+      align-self: center;
+      order:1;
+    }
+    .contact{
+      order:2;
+    }
+    .made{
+      order:3;
+    }
+
+    .social_img{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 45%;
+    }
+
+
+    .contact{
+      text-align: center;
     }
     footer .social_text{
       display: none;
     }
-    footer .made_img{
-
-      align-items: center;
+    footer #made_info{
+      justify-content: center;
     }
 }
 

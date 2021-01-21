@@ -1,5 +1,5 @@
 .lines_background{
-  height: 270vh;
+  height: auto;
   background-image: url("../images/background_index_past.png");
   background-repeat: no-repeat;
   background-size: 100vw;
@@ -20,20 +20,18 @@
 .year{
   display: flex;
   align-items: center;
-  width:55%;
+  width:50%;
+  flex-wrap: wrap;
+  justify-content: center;
+
 }
-.top{
-  justify-content: space-between;
-}
-.bottom{
-  margin-top: 2%;
-  justify-content: space-around;
-}
+
 .year a{
   color:white;
   background-color:#1E1A30;
   padding: 3% 5%;
   font-size: 2em;
+  margin:2%;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
   border-radius: 8px;
   font-family: Poppins-bold, sans-serif;
@@ -76,26 +74,43 @@ transition: 0.3s;
 }
 /* ------------------ MOBILE ------------------ */
 @media screen and (max-width: 670px) {
+
+  .lines_background{
+    background-image: url("../images/background_past_mobile.png");
+  }
+
 .past h1, .partners h1{
-  font-size: 2.4rem;
+  font-size: 2.2rem;
+  margin: 5% auto;
+  width:70%;
 }
 .partner-section {
   margin: 2rem 0;
 }
 .partner-section , .partners_text{
   width:70%;
+  font-size: 0.9rem;
   text-align: left;
+}
+.past{
+  padding-top: 12vh;
+}
+.partners{
+  padding-top: 5vh;
+  padding-bottom:10vh;
 }
 .partner-section a{
   background-color:white;
-  width: 3.5rem;
-  height: 3rem;
+  width: 3.7rem;
+  height: 2.7rem;
   border-radius: 9px;
   margin-bottom: 0.7rem;
 }
-.year a{
-  font-size: 1.2rem;
+.year{
+  width:60%;
 }
-.lines_background{
-  height: 170vh;
+.year a{
+  font-size: 1.1rem;
+  padding: 6% 10%;
+  margin: 5%;
 }

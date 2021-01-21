@@ -24,6 +24,7 @@
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/past.css">
   <link rel="stylesheet" href="css/partners_past.css">
+  <script src="showMenu.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
   <title>Shift Appens</title>
@@ -32,31 +33,35 @@
 <body>
 
     <div class="lines_background">
-  <nav>
-    <img id="taikai" onclick="window.location.href = 'https://taikai.network/en';" src="images/taikai.svg" alt="logo_taikai">
-    <img id="shift" onclick="window.location.href = 'index.html';" src="images/logo.svg" alt="logo">
+      <nav>
+        <div id="nav">
 
-    <div class="menu">
-      <a href="faq.html">FAQ</a>
-      <a href="past.html">PAST</a>
-      <a href="about.html">ABOUT US</a>
-    </div>
-  </nav>
+          <img id="taikai" onclick="window.location.href = 'https://taikai.network/en';" src="images/taikai.svg"
+            alt="logo_taikai">
+          <img id="shift" onclick="window.location.href = 'index.html';" src="images/logo.svg" alt="logo">
+          <img id="menu_icon" onclick=showMenu() src="images/menu.png" alt="menu">
+
+        <div id="menu">
+          <a href="about.html">ABOUT US</a>
+          <a href="past.html">PAST</a>
+          <a href="faq.html">FAQ</a>
+          <img id="tigre_mobile" src="images/tigre_mobile.svg" alt="tiger">
+
+        </div>
+  </div>
 <main>
 <section class="past">
   <h1> PAST EDITIONS</h1>
-  <div class="year top">
+  <div class="year ">
     <a href="//2014.shiftappens.com">2014</a>
     <a href="//2015.shiftappens.com">2015</a>
     <a href="//2016.shiftappens.com">2016</a>
     <a href="//2017.shiftappens.com">2017</a>
-  </div>
-  <div class="year bottom">
+
     <a href="//2018.shiftappens.com">2018</a>
     <a href="//2019.shiftappens.com">2019</a>
     <a href="//2020.shiftappens.com">2020</a>
   </div>
-
 
 </section>
 
@@ -125,6 +130,8 @@
               <br>geral@shiftappens.com</p>
           </div>
         </div>
+        <img id="taikai_mobile" onclick="window.location.href = 'https://taikai.network/en';" src="images/taikai.svg" alt="logo_taikai">
+
         <div class="social">
           <div class="social_img">
             <a class="social_i" href="https://twitter.com/shiftappens"> <img src="images/twitter.svg" alt="logo_twitter"> </a>
@@ -160,5 +167,7 @@
 
 
 </body>
+
+
 
 </html>
