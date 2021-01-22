@@ -247,6 +247,14 @@ You can always decide to take a taxi/uber/bolt, and choose the “Pavilhão Eng.
         but.innerHTML = "Thank you!";
 
     }
+var x = window.matchMedia("(max-width: 600px)")
+if(x.matches){
+    $(document).ready(function() {
+        setInterval(function() {
+            $('.next').click();
+        }, 3000);
+    });
+  }
 
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -255,6 +263,7 @@ showSlides(slideIndex);
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
+
 
 function showSlides(n) {
   var i;

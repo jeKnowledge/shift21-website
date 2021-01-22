@@ -213,10 +213,7 @@ button:focus {
   width: 100%;
 }
 #controls{
-  width: 50%;
-  align-items: center;
-  left:50%;
-  margin-top: 18%;
+display: none;
 }
 .prev,
 .next {
