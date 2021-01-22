@@ -175,7 +175,7 @@ button:focus {
 
 
 /* ------------------ MOBILE ------------------ */
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 600px) {
 
   .lines_background {
     background-image: url("../images/background_index_mobile.png");
@@ -216,7 +216,6 @@ button:focus {
   width: 50%;
   align-items: center;
   left:50%;
-  transform: translate(-60% , -60%);
   margin-top: 18%;
 }
 .prev,
