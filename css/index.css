@@ -118,9 +118,10 @@ padding-bottom:20%;
   z-index: 1;
   width: 100%;
   align-items: center;
-  top: 50%;
+  padding-top: 20%;
   position: absolute;
 }
+
 .prev,
 .next {
   cursor: pointer;
@@ -149,6 +150,9 @@ padding-bottom:20%;
   border-radius: 24px;
   width: 65%;
   height: 7vh;
+  color:white;
+  padding-left:2vw;
+  font-size: 1rem;
 }
 
 button:focus {
@@ -188,7 +192,7 @@ button:focus {
 }
 
 .whole{
-  height: 85vh;
+  height: 100vh;
 }
 .half{
   height: 65vh;
@@ -198,7 +202,7 @@ button:focus {
 }
 .content-text p , button{
   font-weight: 400;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 .content-text, #content-gallery, .content-text-news{
   margin-top: 10%;
@@ -212,7 +216,7 @@ button:focus {
   width: 50%;
   align-items: center;
   left:50%;
-  transform: translate(-50% , -50%);
+  transform: translate(-60% , -60%);
   margin-top: 18%;
 }
 .prev,
@@ -257,11 +261,16 @@ button:focus {
 }
 @media screen and (max-width: 800px) {
   #controls{
-    width: 50%;
+    width: 65%;
     align-items: center;
     top: 110%;
     left:50%;
     transform: translate(-50% , -50%);
   }
 
+}
+@media screen and (max-width: 400px){
+  .whole{
+    height: 120vh;
+  }
 }

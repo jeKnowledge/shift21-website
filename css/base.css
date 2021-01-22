@@ -25,6 +25,8 @@ html {
 body {
     width: 100vw;
     background-color: #000000;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+
 }
 
 a {
@@ -250,6 +252,7 @@ footer{
       height:50vh;
       flex-direction: column;
       padding: 0 8%;
+      font-size: 0.7rem;
     }
     .contact , .social , .made{
       height: 33%;
