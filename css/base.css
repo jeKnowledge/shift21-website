@@ -1,7 +1,7 @@
 
 @font-face {
   font-family: Poppins-bold;
-  src: url('../css/fonts/Poppins/Poppins-bold.ttf');
+  src: url('../css/fonts/Poppins/Poppins-Bold.ttf');
 }
 @font-face {
   font-family: Poppins;
@@ -226,7 +226,7 @@ footer{
     display: block;
     color:white;
     font-size: 3rem;
-    font-family: Poppins-bold, sans-serif;
+    font-family: Poppins-bold;
     padding-bottom: 5%;
   }
 
