@@ -154,7 +154,7 @@ footer{
   color:#c2b5ff;
 }
 
-.made img{
+.made_img img{
   height: 6vh;
   cursor: pointer;
 }
@@ -257,11 +257,12 @@ footer{
       display: flex;
       height:50vh;
       flex-direction: column;
-      padding: 0 8%;
+      padding: 10% ;
       font-size: 0.7rem;
+      align-items: center;
     }
     .contact , .social , .made{
-      height: 33%;
+      width: 90%;
     }
 
     #shift_icon{
@@ -278,21 +279,26 @@ footer{
     .made{
       order:3;
     }
-    #made_info img:nth-child(2){
-      padding-left: 0;
-
+    .made img:nth-child(2){
+      padding-left: 2%;
+    }
+    .made img:nth-child(1){
+      padding-right: 2%;
     }
     .made_img{
       display: flex;
-      justify-content: space-around;
-
+      justify-content: center;
+      align-items: center;
+    }
+    .made_img img{
+      width: 15vw;
     }
 
     .social_img{
       display: flex;
       justify-content: space-between;
       align-items: center;
-      width: 50%;
+      width: 70%;
       flex-wrap: wrap;
     }
     #taikai_mobile{
@@ -303,10 +309,16 @@ footer{
 
     .contact{
       text-align: center;
+      font-size: 1.3em;
     }
 
     footer .social_text{
       display: none;
+    }
+    .made p {
+      text-align: center;
+      font-size: 1.3em;
+
     }
 
 }
