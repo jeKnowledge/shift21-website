@@ -59,10 +59,10 @@ transition: 0.3s;
 }
 .partner-section a{
   background-color:white;
-  width: 11rem;
-  height: 7rem;
+  width: 10rem;
+  height: 6rem;
   border-radius: 8px;
-  margin-bottom: 1.6rem;
+  margin-bottom: 1.5rem;
   background-size: 50%;
   background-position: center;
   background-repeat: no-repeat;
