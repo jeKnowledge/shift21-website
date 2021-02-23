@@ -62,16 +62,19 @@
     <section class="section whole">
       <img class="outline" id="sa_" src="images/sa_outline.svg">
       <div class="cont">
-        <h1>Shift APPens</h1>
+        <h1>What is Shift APPens</h1>
         <div class="content-text">
-          <p> Shift APPens is an event organized with love by NEI and jeKnowledge.
-            We bring students and workers from all over the country to the city of Coimbra.
-            We can promise you fun, competition, challenges  and friendships!  If you have never participated, come join us! We are much more than a Hackathon, <br>do you really want to miss it?</p>
+          <p> Coming up on the 7th edition, Shift APPens is a Hackathon organized with love by by NEI/AAC (Informatics Students Nucleus from Academic Association of Coimbra) and by jeKnowledge (Faculty of Sciences and Technology of University of Coimbra’s junior company), that brings students and workers from all over the country to the city of Coimbra. 
+          </br></br>
+            Participants have 48 hours to create an application, defending it in a final pitch, in front of a carefully chosen jury. We aim to promote a healthy competition and exchange knowledge from the tech world amongst the participants, all in a relaxed environment. We gather developers, designers and entrepreneurs of different technological fields, from every corner of the country.
+        </br></br>
+            We can promise you fun, competition, challenges  and friendships!  If you have never participated, come join us! We are much more than a Hackathon, do you really want to miss it?
+            </p>
         </div>
       </div>
     </section>
 
-    <section class="section whole">
+<!--     <section class="section whole">
       <img class="outline" id="shift_" src="images/shift_outline.svg">
       <div class="cont">
         <h1>What is it?</h1>
@@ -90,45 +93,18 @@
             <p>We can promise you fun, competition and friendships! If you have never participated, come join us!</p>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section class="section whole gal">
-      <img class="outline" id="appens" src="images/appens_outline.svg">
-      <div class="cont ">
-        <h1>Memories</h1>
-        <div id="content-gallery">
-          <div id="controls">
-            <a class="prev" onclick="plusSlides(-1)">PREV</a>
-            <a class="next" onclick="plusSlides(1)">NEXT</a>
-          </div>
-                <div class="images">
-                  <img src="images/memories/1.png" style="width:100%">
-                </div>
 
-              <div class="images">
-                <img src="images/memories/2.png" style="width:100%" >
-              </div>
-
-              <div class="images">
-                <img src="images/memories/3.png" style="width:100%">
-              </div>
-
-              <div class="images">
-                <img src="images/memories/4.png" style="width:100%">
-              </div>
-
-        </div>
-      </div>
-    </section>
     <section class="section half">
       <img class="outline" id="vintevinteum" src="images/2021_outline.svg">
       <div class="cont">
-        <h1>How is it?</h1>
+        <h1>2021's Edition</h1>
         <div class="content-text">
-          <p> Due to the relaxed working environment, the trade of knowledge from the world of technology and the
-            promotion of a healthy competition,
-            participating in this event is a great opportunity to develop not only hard skills, but also soft skills,
-            like team spirit, creativity, and the ability to work under the pressure of the 48 hour timing.</p>
+          <p> After 2020’s edition being cancelled due to the pandemic, we’re back in 2021, and this time nothing can stop us to go all the way until the end! 
+            <br> <br> 
+            To guarantee the security of all those involved in the event, our 7th edition is going to be online. This year’s Hackathon will be a special one! You can participate from the comfort of your house, so get excited and bring your best sweatpants! We’re preparing some fun things, so you won’t even notice you’re in your living room... Are you ready? We’re counting on you!
+            </p>
         </div>
       </div>
     </section>
@@ -165,7 +141,7 @@ You can always decide to take a taxi/uber/bolt, and choose the “Pavilhão Eng.
     <section class="section half">
       <div class="cont">
         <h1>Newsletter</h1>
-        <p id="txt_newsletter">Subscribe to our newsletter </p>
+        <p id="txt_newsletter">Subscribe to our newsletter! </p>
 
         <form
             action="https://shiftappens.us12.list-manage.com/subscribe/post?u=6002684bae4a40458e05587b2&amp;id=951996e1be"
@@ -189,14 +165,6 @@ You can always decide to take a taxi/uber/bolt, and choose the “Pavilhão Eng.
 
         </div>
 
-        <!-- <div class="content-text">
-          <div id="form">
-            <input type="email">
-            <button onclick=newsletterClick()>
-              <span id="subs">Subscribe now</span>
-            </button>
-          </div>
-        </div> -->
       </div>
     </form>
     </section>
@@ -270,52 +238,5 @@ You can always decide to take a taxi/uber/bolt, and choose the “Pavilhão Eng.
         but.value = "Thank you!";
 
     }
-var x = window.matchMedia("(max-width: 600px)")
-if(x.matches){
-    $(document).ready(function() {
-        setInterval(function() {
-            $('.next').click();
-        }, 3000);
-    });
-  }
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("images");
-
-  if (n > slides.length) {
-    slideIndex = 1}
-
-  if (n < 1) {
-    slideIndex = slides.length}
-
-  for (i = 0; i < slides.length; i++) {
-
-   slides[i].style.zIndex = "0";
-   slides[i].style.transform = "rotate(0deg)";
-
-  }
-
-  slides[slideIndex-1].style.zIndex = "1";
-  if(slideIndex%4==0){
-  slides[slideIndex-1].style.transform = "rotate(4deg)";
-  slides[slideIndex-1].style.opacity = "1";
-}
-else{
-  slides[slideIndex-1].style.transform = "rotate(-4deg)"
-  slides[slideIndex-1].style.opacity = "1";
-}
-
-}
-
 </script>
 </html>

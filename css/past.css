@@ -1,19 +1,21 @@
 .lines_background{
   height: auto;
-  background-image: url("../images/background_index_past.png");
+  background-image: url("../images/background_past.png");
   background-repeat: no-repeat;
-  background-size: 100vw;
 }
-.past, .partners{
+.past, .partners, .memories{
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   width: 100vw;
 }
+.memories{
+  height:70vh;
+}
 
 
-.past h1, .partners h1{
+.past h1, .partners h1, .memories h1{
   font-size: 3rem;
   margin: 5% auto;
   text-transform: uppercase;
@@ -42,6 +44,41 @@
   color:#1E1A30;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 transition: 0.3s;
+}
+
+#content-gallery{
+  width: 45vw;
+  position: relative;
+  height: 220%;
+}
+.images{
+  position: absolute;
+  z-index: 2;
+  left:10%;
+  transition: 2s;
+  width: 80%;
+}
+
+#controls{
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  width: 100%;
+  align-items: center;
+  padding-top: 20%;
+  position: absolute;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  user-select: none;
+  -webkit-user-select: none;
+  font: Poppins;
+  border-bottom: 3px solid  #ffffff;
 }
 
 .partners_text{
@@ -114,4 +151,5 @@ transition: 0.3s;
   font-size: 1.1rem;
   padding: 6% 10%;
   margin: 5%;
+}
 }
