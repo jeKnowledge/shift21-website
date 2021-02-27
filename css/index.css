@@ -6,7 +6,6 @@
   align-items: center;
   justify-content: center;
 }
-
 .hero h1 {
   font-size: 4rem;
   cursor: pointer;
@@ -22,8 +21,6 @@
 #make {
   opacity: 1;
   z-index: 2;
-
-
 }
 
 #tiger1 {
@@ -34,7 +31,7 @@
 }
 #tiger2 {
   position: absolute;
-  left: 30% !important;
+  left: 25% !important;
   opacity: 0.7;
   transition: 0.5s;
 }
