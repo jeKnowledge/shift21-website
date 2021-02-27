@@ -21,22 +21,27 @@
 #make {
   opacity: 1;
   z-index: 2;
+  width: 95vw;
 }
 
 #tiger1 {
   position: absolute;
   left: 25% !important;
-  top:-4% !important;
+  top:-6% !important;
   opacity: 0.9;
   transition: 0.5s;
+  width: 50vw;
 }
 #tiger2 {
   position: absolute;
   left: 25% !important;
-  top:-4% !important;
-
+  top:-6% !important;
   opacity: 0.7;
   transition: 0.5s;
+  width: 50vw;
+}
+#makeitappen_mobile{
+  opacity:0;
 }
 
 
@@ -88,17 +93,17 @@
 .outline {
   position: relative;
   z-index: 0;
+  width:25vw;
+  left: -25%;
+
 }
 
-#sa_{
-  bottom: -17%;
-  left: -25%;
+#sa{
+  bottom: -18%;
 }
 
 #vintevinteum {
-  bottom: -22.5%;
-  left: -20%;
-  
+  bottom: -20%;
 }
 
 .content-text {
@@ -193,44 +198,77 @@
 
 }
  #mce-EMAIL {
-  background: rgba(53, 46, 51, 0.8);
+  background: rgba(53, 46, 51, 0.5);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border: 0;
   border-radius: 24px;
   height: 7vh;
   color:white;
-  padding-left:2vw;
   font-size: 0.9rem;
-  padding: 0 7vw;
+  padding: 0 2vw;
+  width:24vw;
 
 }
 
 
 /* ------------------ MOBILE ------------------ */
-@media screen and (max-width: 600px) {
 
-  .lines_background {
-    background-image: url("../images/background_index_mobile.png");
+@media screen and (min-width: 300px) 
+  and (max-width: 480px){
 
+.lines_background {
+  background-image: url("../images/background_index_mobile.png");
 }
+
 #make{
-  font-size: 2.5rem;
+  opacity: 0;
+}
+#makeitappen_mobile{
+  opacity: 1;
+}
+#make_mobile, #appen_mobile{
+  height: 10vh;
 }
 
-#tiger{
-  width: 80vw;
-  left:10% !important;
-  top:20% !important;
+#tiger1 {
+  left: 5% !important;
+  top:25% !important;
+  width: 90vw;
+}
+#tiger2 {
+  left: 5% !important;
+  top:25% !important;
+  width: 90vw;
 }
 
 .whole{
   height: 100vh;
 }
 .half{
-  height: 65vh;
+  height:75vh;
+}
+
+.faq{
+  margin-top: 0;
 }
 .cont h1{
   font-size: 1.9em;
+ 
+}
+.outline{
+width:40vw;}
+
+#sa{
+  bottom:-7%;
+}
+
+#vintevinteum {
+  bottom: -8%;
+}
+
+#faq_title{
+  width: 70vw;
+  font-size: 0.8em;
 }
 .content-text p , button{
   font-weight: 400;
@@ -240,65 +278,36 @@
   margin-top: 10%;
   width: 70vw;
 }
-.images{
-  left:0;
-  width: 100%;
+.cont_faq{
+  padding:2vh 4vw;
 }
-#controls{
-display: none;
-}
-.prev,
-.next {
-  font-weight: 700;
-  font-size: 18px;
-}
+
 
 #mc_embed_signup_scroll {
   flex-direction: column;
 }
 #mce-EMAIL{
   width: 100%;
-  height: 5vh;
+  height:7vh;
   border-radius: 16px;
+  opacity: 0.5;
+
 }
 #mc-embedded-subscribe{
   margin-top: 8%;
-  border-radius: 12px;
+  border-radius: 16px;
   width:70%;
-  height: 5vh;
+  height: 7vh;
   font-size: 0.9rem;
 }
 
-#sa_{
-  width: 40%;
-  top:5%;
-}
-#shift_ {
-  width: 50%;
-  top:5%;
-}
-#appens {
-    width: 65%;
-    top:4%;
-}
-#vintevinteum {
-  width: 40%;
-  top:6%;
-}
+
 
 }
 @media screen and (max-width: 800px) {
-  #controls{
-    width: 65%;
-    align-items: center;
-    top: 110%;
-    left:50%;
-    transform: translate(-50% , -50%);
-  }
+ 
+  
+
 
 }
-@media screen and (max-width: 400px){
-  .whole{
-    height: 120vh;
-  }
-}
+

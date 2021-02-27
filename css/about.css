@@ -52,7 +52,7 @@
 /* ------------------ MOBILE ------------------ */
 @media screen and (max-width: 670px) {
   .lines_background{
-    background-image: url("../images/background_faq_mobile.png")
+    background-image: url("../images/background_about_mobile.png")
   }
   .about{
     padding-top: 12vh;
