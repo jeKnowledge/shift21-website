@@ -37,7 +37,7 @@
 
           <img id="taikai" onclick="window.location.href = 'https://taikai.network/en';" src="images/taikai.svg"
             alt="logo_taikai">
-          <img id="shift" onclick="window.location.href = 'index.html';" src="images/logo.svg" alt="logo">
+          <img id="shift" onclick="window.location.href = 'index.html';" src="images/logo.png" alt="logo">
           <img id="menu_icon" onclick=showMenu() src="images/menu.png" alt="menu">
 
         <div id="menu">
@@ -56,7 +56,7 @@
   <h1 id='pc'> FREQUENTLY ASKED QUESTIONS</h1>
   <h1 id='mobile'> FAQ</h1>
 
-    <div class="cont">
+    <div class="cont_faq">
       <div class="question">
         <p>How can I learn more about this hackathon?</p>
         <img class="icon" src="images/open.svg" alt="icone">
@@ -66,7 +66,7 @@
       </div>
     </div>
 
-    <div class="cont">
+    <div class="cont_faq">
       <div class="question">
         <p>How is it going to be?</p>
         <img class="icon" src="images/open.svg" alt="icone">
@@ -77,7 +77,7 @@
       </div>
     </div>
 
-    <div class="cont">
+    <div class="cont_faq">
       <div class="question">
         <p>Can I be part of it?</p>
         <img class="icon" src="images/open.svg" alt="icone">
@@ -86,7 +86,7 @@
         <p>Any student, professional or enthusiast can be part of it!</p>
       </div>
     </div>
-    <div class="cont">
+    <div class="cont_faq">
       <div class="question">
         <p>How many members can a team have?</p>
         <img class="icon" src="images/open.svg" alt="icone">
@@ -96,7 +96,7 @@
       </div>
     </div>
 
-    <div class="cont">
+    <div class="cont_faq">
       <div class="question">
         <p>What can I do at Shift APPens?</p>
         <img class="icon" src="images/open.svg" alt="icone">
@@ -107,7 +107,7 @@
       </div>
     </div>
 
-    <div class="cont">
+    <div class="cont_faq">
       <div class="question">
         <p>Who can I participate with?</p>
         <img class="icon" src="images/open.svg" alt="icone">
@@ -118,7 +118,7 @@
       </div>
     </div>
 
-    <div class="cont">
+    <div class="cont_faq">
       <div class="question">
         <p>How much will it cost</p>
         <img class="icon" src="images/open.svg" alt="icone">
@@ -146,7 +146,7 @@
       </a>
       <a class="social_i" href="https://www.facebook.com/whereshiftappens"> <img src="images/facebook.svg"
           alt="logo_facebook"> </a>
-      <img id="shift_icon" onclick="window.location.href = 'index.html';" src="images/logo_icon.svg" alt="logo">
+      <img id="shift_icon" onclick="window.location.href = 'index.html';" src="images/logo_icon.png" alt="logo">
       <a class="social_i" href="https://www.instagram.com/shiftappens"> <img src="images/insta.svg"
           alt="logo_instagram"> </a>
       <a class="social_i" href="https://www.linkedin.com/company/shift-appens"> <img src="images/linkedin.svg"
@@ -179,6 +179,7 @@
 
 </body>
 <script>
+  var cont= document.getElementsByClassName("cont_faq")
   var question = document.getElementsByClassName("question");
   var question_img = document.getElementsByClassName("icon");
   var icone= document.getElementById("icone");
@@ -195,21 +196,21 @@ for (i = 0; i < question.length; i++) {
     var abre =this.nextElementSibling;
     var answer = this.nextElementSibling;
     var img= this.nextElementSibling;
+    var cont_faq=this.nextElementSibling;
 
     if (answer.style.display === "block") {
       answer.style.display = "none";
       myimg.src= "images/open.svg"
+      
 
     } else {
       answer.style.display = "block";
       myimg.src= "images/close.svg"
 
+
     }
   });
 }
-
-
-
 
 </script>
 </html>

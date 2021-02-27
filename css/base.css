@@ -93,6 +93,7 @@ header {
 }
 #menu a:hover{
   color:#c2b5ff;
+  text-shadow: 0px 0px 18px #7D6AE4;transition: 0.3s;
 }
 #menu a:active{
   color:#d0c6ff;
@@ -134,6 +135,7 @@ footer{
   padding-bottom: 2%;
 }
 
+
 .social_img a:nth-child(2){
   margin-left: 2vw;
 }
@@ -152,6 +154,9 @@ footer{
 }
 .social_text a:hover{
   color:#c2b5ff;
+  text-shadow: 0px 0px 18px #7D6AE4;transition: 0.3s;
+
+
 }
 
 .made_img img{

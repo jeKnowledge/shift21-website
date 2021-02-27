@@ -40,10 +40,12 @@
   font-family: Poppins-bold;
 }
 .year a:hover{
-  background-color: #D0C6FF;
-  color:#1E1A30;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-transition: 0.3s;
+  background-color: #964DF2;
+  box-shadow: 0px 0px 18px #7D6AE4;transition: 0.3s;
+}
+.year a:active{
+  background-color: #9665D6;
+  box-shadow: 0px 0px 18px #7D6AE4;transition: 0.3s;
 }
 
 #content-gallery{
@@ -79,6 +81,14 @@ transition: 0.3s;
   -webkit-user-select: none;
   font: Poppins;
   border-bottom: 3px solid  #ffffff;
+}
+.prev:hover,
+.next:hover{
+color:#B690E8;
+border-bottom: 3px solid #B690E8;
+text-shadow: 0px 0px 18px #7D6AE4;transition: 0.3s;
+
+
 }
 
 .partners_text{
