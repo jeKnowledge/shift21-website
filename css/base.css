@@ -356,6 +356,9 @@ and (max-width: 1030px){
   .made_img img{
     height: 5vh;
   }
+  #menu{
+    width:40vw;
+  }
   
 
 }

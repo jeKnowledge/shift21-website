@@ -248,6 +248,7 @@
 
 .whole{
   height: 115vh;
+  padding-top: 10vh;
 }
 .half{
   height:50vh;
@@ -264,11 +265,11 @@
 width:40vw;}
 
 #sa{
-  bottom:-7%;
+  bottom:-8%;
 }
 
 #vintevinteum {
-  bottom: -8%;
+  bottom: -9%;
 }
 
 #faq_title{
