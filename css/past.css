@@ -1,5 +1,5 @@
 .lines_background{
-  background-image: url("../images/background_past.png");
+  background-image: url("../images/background_past_c.png");
 }
 .past, .partners, .memories{
   display: flex;

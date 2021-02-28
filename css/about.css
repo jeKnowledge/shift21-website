@@ -1,5 +1,5 @@
 .lines_background{
-  background-image: url("../images/background_about.png");
+  background-image: url("../images/background_about_c.png");
 }
 .about{
   display: flex;
@@ -29,9 +29,14 @@
   border-bottom: 8px solid  #EF376A;
   -webkit-box-shadow: 0 9px 8px -8px #E4457C;
 	-moz-box-shadow: 0 9px 8px -8px #E4457C;
-	box-shadow: 0px 9px 8px -8px #E4457C;
-
+	box-shadow: 0px 9px 8px -8px #E4457C; 
 }
+/* .rect{
+  height:10px;
+  width:50px;
+  background-color: #EF376A;  
+  box-shadow: 0px 0px 12px #EC4F85;
+}*/
 
 .text h3{
   text-transform: uppercase;
