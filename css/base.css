@@ -155,8 +155,6 @@ footer{
 .social_text a:hover{
   color:#c2b5ff;
   text-shadow: 0px 0px 18px #7D6AE4;transition: 0.3s;
-
-
 }
 
 .made_img img{
@@ -351,11 +349,12 @@ and (max-width: 1030px){
   .made_img img{
     height: 5vh;
   }
-  #menu{
-    
-  }
+  #menu a:nth-child(2) {
+    margin: 0 1.5rem;
+}
   footer{
     padding: 5% 8%;
+    font-size: 0.9em;
   }
   .social_text{
     display:none;

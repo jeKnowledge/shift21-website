@@ -103,7 +103,7 @@ text-shadow: 0px 0px 18px #7D6AE4;transition: 0.3s;
 }
 .partner-section{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-wrap: wrap;
   margin: 4rem 0;
   width:60%;
