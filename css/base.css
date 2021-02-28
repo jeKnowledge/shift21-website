@@ -76,6 +76,7 @@ header {
 }
 #taikai{
   width:15%;
+  opacity: 0;
 }
 #menu{
   margin: auto;
@@ -184,6 +185,7 @@ footer{
 }
 #taikai_mobile{
   display: none;
+
 }
 /* ------------------ MOBILE ------------------ */
 
@@ -328,7 +330,7 @@ footer{
     }
     #taikai_mobile{
       width: 75%;
-      display: block;
+      display: none;
       padding-top: 10%;
       margin:auto;
     }
