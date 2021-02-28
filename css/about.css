@@ -60,7 +60,7 @@
   }
   .about h1{
     font-size: 2.2rem;
-    width:70%;
+    width:72%;
   }
   .cont_about{
     flex-direction: column;
@@ -72,7 +72,7 @@
     font-size: 0.8em;
   }
   .text{
-    width: 70%;
+    width: 73vw;
 
   }
   .cont_about div:first-child{
@@ -84,8 +84,7 @@
 
 }
 /* ------------------ IPAD ------------------ */
-@media screen and (min-width: 480px) 
-and (max-width: 1030px){ 
+@media screen and (max-width: 1030px) {
   .lines_background{
     background-image: url("../images/background_about_mobile.png");
   }

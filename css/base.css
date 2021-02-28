@@ -187,8 +187,19 @@ footer{
 }
 /* ------------------ MOBILE ------------------ */
 
-@media screen and (min-width: 300px) 
+@media screen and (min-width: 320px) 
   and (max-width: 480px){
+    p{
+      line-height: 22px;
+    }
+    .section-main {
+      width: 90%;
+  }
+
+  .section-title h2 {
+      font-size: 20px;
+      line-height: 1.5rem;
+  }
 #scene{
   z-index: 1;
 }
@@ -267,7 +278,7 @@ footer{
 
     footer{
       display: flex;
-      height:50vh;
+      height:60vh;
       flex-direction: column;
       padding: 10% ;
       font-size: 0.7rem;
@@ -284,12 +295,14 @@ footer{
     .social{
       order:0;
     }
-
     .contact{
       order:2;
+      margin-top: 4vh;
+
     }
     .made{
       order:3;
+      margin-top: 4vh;
     }
     .made img:nth-child(2){
       padding-left: 2%;
@@ -314,9 +327,10 @@ footer{
       flex-wrap: wrap;
     }
     #taikai_mobile{
-      width: 100%;
+      width: 75%;
       display: block;
       padding-top: 10%;
+      margin:auto;
     }
 
     .contact{
@@ -334,20 +348,7 @@ footer{
     }
 
 }
-/* ------------------ MOBILE ------------------ */
-@media screen and (min-width: 300px) 
-  and (max-width: 480px){
-    .section-main {
-        width: 90%;
-    }
 
-    .section-title h2 {
-        font-size: 20px;
-        line-height: 1.5rem;
-    }
-
-
-}
 /* ------------------ IPAD ------------------ */
 @media screen and (min-width: 480px) 
 and (max-width: 1030px){ 
