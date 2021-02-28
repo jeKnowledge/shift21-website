@@ -55,7 +55,7 @@
 }
 
 .whole {
-  height: 85vh;
+  min-height: 85vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -63,7 +63,7 @@
 }
 
 .half {
-  height: 50vh;
+  min-height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -95,13 +95,12 @@
   font-size: 3.4rem;
 }
 
-/*titulos outline*/
+/*TITULOS OUTLINE*/
 .outline {
   position: relative;
   z-index: 0;
   width:25vw;
   left: -25%;
-
 }
 
 #sa{
@@ -111,7 +110,6 @@
 #vintevinteum {
   bottom: -20%;
 }
-
 
 #faq_title{
   display: flex;
@@ -186,7 +184,6 @@
   font-size: 0.9rem;
   padding: 0 2vw;
   width:24vw;
-
 }
 
 #mc-embedded-subscribe {
@@ -212,24 +209,10 @@
 }
 
 /* ------------------ MOBILE ------------------ */
-@media screen and (min-width: 290px) 
-  and (max-width: 320px){
+@media screen and (max-width: 320px){
     
-    .gradient_background {
-      background-image: url("../images/background1_mobile.png");
-      height: 100vh;
-
-    }
-.lines_background {
-  background-image: url("../images/background_index_mobile.png");
-}
-
-#make{
-  opacity: 0;
-}
 #makeitappen_mobile{
   opacity: 1;
-  top:20%;
   position: absolute;
   top:80% !important;
   left: 12vw !important;
@@ -246,46 +229,13 @@
   width: 95vw;
 }
 
-.whole{
-  height: 115vh;
-  padding-top: 10vh;
-}
-.half{
-  height:50vh;
-}
-
-.faq{
-  margin-top: 0;
-}
-.cont h1{
-  font-size: 1.9em;
- 
-}
-.outline{
-width:40vw;}
-
-#sa{
-  bottom:-8%;
-}
-
 #vintevinteum {
-  bottom: -9%;
+  bottom: -29%;
 }
 
 #faq_title{
   width: 70vw;
   font-size: 0.8em;
-}
-.content-text p , button{
-  font-weight: 400;
-  font-size: 0.8rem;
-}
-.content-text, #content-gallery, .content-text-news{
-  margin-top: 10%;
-  width: 75vw;
-}
-.cont_faq{
-  padding:2vh 4vw;
 }
 
 
@@ -308,8 +258,8 @@ width:40vw;}
 }
 
   }
-@media screen and (min-width: 330px) 
-  and (max-width: 480px){
+
+@media screen and (max-width: 480px){
     .gradient_background {
       background-image: url("../images/background1_mobile.png");
     }
@@ -326,6 +276,7 @@ width:40vw;}
   position: absolute;
   top:80% !important;
   left: 8vw !important;
+  min-width: 80vw;
 }
 #tiger1 {
   left: 5% !important;
@@ -339,10 +290,10 @@ width:40vw;}
 }
 
 .whole{
-  height: 100vh;
+  min-height: 100vh;
 }
 .half{
-  height:50vh;
+  min-height:50vh;
 }
 
 .faq{

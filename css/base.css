@@ -112,10 +112,7 @@ header {
 /* FOOTER */
 footer{
   background-image: linear-gradient(#151032, #180F16);
-  top: 0;
-  bottom: 0;
   width: 100vw;
-  height: 30vh;
   display: flex;
   box-sizing: border-box;
   justify-content: space-between;
@@ -140,7 +137,6 @@ footer{
   align-items: center;
   padding-bottom: 2%;
 }
-
 
 .social_img a:nth-child(2){
   margin-left: 2vw;
@@ -280,7 +276,6 @@ footer{
 
     footer{
       display: flex;
-      height:60vh;
       flex-direction: column;
       padding: 10% ;
       font-size: 0.7rem;
