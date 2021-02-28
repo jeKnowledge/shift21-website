@@ -1,9 +1,5 @@
 .lines_background{
-  height: auto;
   background-image: url("../images/background_about.png");
-  background-repeat: no-repeat;
-  background-size: 100vw;
-
 }
 .about{
   display: flex;
@@ -50,8 +46,9 @@
   cursor: pointer;
 }
 /* ------------------ MOBILE ------------------ */
-@media screen and (max-width: 670px) {
-  .lines_background{
+@media screen and (min-width: 300px) 
+  and (max-width: 480px){
+      .lines_background{
     background-image: url("../images/background_about_mobile.png")
   }
   .about{
@@ -85,4 +82,12 @@
   font-family: Hind-light;
   }
 
+}
+/* ------------------ IPAD ------------------ */
+@media screen and (min-width: 480px) 
+and (max-width: 1030px){ 
+  .lines_background{
+    background-image: url("../images/background_about_mobile.png");
+  }
+  
 }

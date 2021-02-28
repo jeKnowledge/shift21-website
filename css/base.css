@@ -101,6 +101,11 @@ header {
 #tigre_mobile{
   display: none;
 }
+.lines_background{
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+}
 
 
 /* FOOTER */
@@ -182,7 +187,8 @@ footer{
 }
 /* ------------------ MOBILE ------------------ */
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 300px) 
+  and (max-width: 480px){
 #scene{
   z-index: 1;
 }
@@ -328,8 +334,9 @@ footer{
     }
 
 }
-
-@media screen and (max-width: 400px) {
+/* ------------------ MOBILE ------------------ */
+@media screen and (min-width: 300px) 
+  and (max-width: 480px){
     .section-main {
         width: 90%;
     }
@@ -339,5 +346,15 @@ footer{
         line-height: 1.5rem;
     }
 
+
+}
+/* ------------------ IPAD ------------------ */
+@media screen and (min-width: 480px) 
+and (max-width: 1030px){ 
+
+  .made_img img{
+    height: 5vh;
+  }
+  
 
 }

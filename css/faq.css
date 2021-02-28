@@ -1,8 +1,5 @@
 .lines_background{
-  height: auto;
   background-image: url("../images/background_faq.png");
-  background-repeat: no-repeat;
-  background-size: 100vw;
 }
 .faqs{
   display: flex;
@@ -65,7 +62,8 @@
   padding-top: 1%;
 }
 /* ------------------ MOBILE ------------------ */
-@media screen and (max-width: 670px) {
+@media screen and (min-width: 300px) 
+  and (max-width: 480px){
   #question img{
     z-index: 0;
   }
@@ -110,6 +108,14 @@ border-width:2px;
   .cont_faq:hover{
     border: double 2px transparent;
 
+  }
+
+}
+/* ------------------ IPAD ------------------ */
+@media screen and (min-width: 480px) 
+and (max-width: 1030px){  
+  .lines_background{
+    background-image: url("../images/background_faq.png");
   }
 
 }

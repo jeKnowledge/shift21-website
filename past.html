@@ -10,7 +10,7 @@
   <meta name="robots" content="noydir, noodp">
   <meta name="description" content="Shift Appens - Make It Appen">
   <meta name="keywords"
-    content="shift, appens, hackathon, coding, talks, 48hours, coimbra, 2020, apps, design, 13, April, jeKnowledge, nei, dei, cmc">
+    content="shift, appens,shiftappens, hackathon, coding, talks, 48hours, coimbra, 2020, apps, design, 13, April, jeKnowledge, nei, dei, cmc">
   <meta name="author" content="Joana Sousa">
   <meta property="og:title" content="Shift Appens" />
   <meta property="og:description"
@@ -66,7 +66,15 @@
 
 <section class="memories">
     <h1>Memories</h1>
+    <div id="barra">
+      <span class="rect"></span>
+      <span class="rect"></span>
+      <span class="rect"></span> 
+      <span class="rect"></span>
+    </div>
+
     <div id="content-gallery">
+      
       <div id="controls">
         <a class="prev" onclick="plusSlides(-1)">PREV</a>
         <a class="next" onclick="plusSlides(1)">NEXT</a>
@@ -189,15 +197,12 @@
       <p>Made with <a style="color:#EF376A">love</a> by us</p>
     </div>
   </div>
-
 </footer>
-
-
-  </main>
-
-
+</main>
 </body>
+
 <script>
+
   var x = window.matchMedia("(max-width: 600px)")
 if(x.matches){
     $(document).ready(function() {
@@ -219,6 +224,7 @@ function plusSlides(n) {
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("images");
+  var rect = document.getElementsByClassName("rect");
 
   if (n > slides.length) {
     slideIndex = 1}
@@ -230,10 +236,16 @@ function showSlides(n) {
 
    slides[i].style.zIndex = "0";
    slides[i].style.transform = "rotate(0deg)";
+   rect[i].style.backgroundColor= "#302830";
+
 
   }
 
   slides[slideIndex-1].style.zIndex = "1";
+  rect[slideIndex-1].style.backgroundColor= "#A96FF3";
+
+
+
   if(slideIndex%4==0){
   slides[slideIndex-1].style.transform = "rotate(4deg)";
   slides[slideIndex-1].style.opacity = "1";
@@ -242,6 +254,10 @@ else{
   slides[slideIndex-1].style.transform = "rotate(-4deg)"
   slides[slideIndex-1].style.opacity = "1";
 }
+
+
+
+
 
 }
 
