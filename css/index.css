@@ -104,11 +104,11 @@
 }
 
 #sa{
-  bottom: -18%;
+  margin-bottom: -7rem;
 }
 
 #vintevinteum {
-  bottom: -20%;
+  margin-bottom: -7.5rem;
 }
 
 #faq_title{
@@ -209,60 +209,19 @@
 }
 
 /* ------------------ MOBILE ------------------ */
-@media screen and (max-width: 320px){
+@media screen and (max-width: 325px){
     
 #makeitappen_mobile{
-  opacity: 1;
-  position: absolute;
-  top:80% !important;
-  left: 12vw !important;
   width:80vw;
-}
-#tiger1 {
-  left: 5% !important;
-  top:22% !important;
-  width: 95vw;
-}
-#tiger2 {
-  left: 5% !important;
-  top:22% !important;
-  width: 95vw;
-}
-
-#vintevinteum {
-  bottom: -29%;
-}
-
-#faq_title{
-  width: 70vw;
-  font-size: 0.8em;
-}
-
-
-#mc_embed_signup_scroll {
-  flex-direction: column;
-}
-#mce-EMAIL{
-  width: 100%;
-  height:7vh;
-  border-radius: 16px;
-  opacity: 0.9;
-
-}
-#mc-embedded-subscribe{
-  margin-top: 8%;
-  border-radius: 16px;
-  width:70%;
-  height: 7vh;
-  font-size: 0.9rem;
 }
 
   }
 
 @media screen and (max-width: 480px){
-    .gradient_background {
-      background-image: url("../images/background1_mobile.png");
-    }
+
+.gradient_background {
+  background-image: url("../images/background1_mobile.png");
+}
 .lines_background {
   background-image: url("../images/background_index_mobile.png");
 }
@@ -276,7 +235,7 @@
   position: absolute;
   top:80% !important;
   left: 8vw !important;
-  min-width: 80vw;
+  min-width: 70vw;
 }
 #tiger1 {
   left: 5% !important;
@@ -297,7 +256,7 @@
 }
 
 .faq{
-  margin-top: 0;
+  margin-top: 5vh;
 }
 .cont h1{
   font-size: 1.9em;
@@ -307,11 +266,14 @@
 width:40vw;}
 
 #sa{
-  bottom:-7%;
+  margin-bottom: -3rem;
+ 
 }
 
 #vintevinteum {
-  bottom: -8%;
+  margin-bottom: -3rem;
+
+ 
 }
 
 #faq_title{
@@ -330,16 +292,16 @@ width:40vw;}
   padding:2vh 4vw;
 }
 
-
 #mc_embed_signup_scroll {
   flex-direction: column;
+  display: flex;
 }
+
 #mce-EMAIL{
   width: 100%;
   height:7vh;
   border-radius: 16px;
   opacity: 0.9;
-
 }
 #mc-embedded-subscribe{
   margin-top: 8%;
@@ -352,8 +314,7 @@ width:40vw;}
 }
 
 /* ------------------ IPAD ------------------ */
-@media screen and (min-width: 480px) 
-and (max-width: 1030px){ 
+@media screen and (min-width: 1000px)and (max-width: 1030px){ 
 
  .lines_background {
   background-image: url("../images/background_index_mobile.png");
@@ -373,10 +334,10 @@ and (max-width: 1030px){
   width: 60vw;
 }
 .whole{
-  height: 70vh;
+  min-height: 70vh;
 }
 .half{
-  height:35vh;
+  min-height:35vh;
 }
 #mc_embed_signup_scroll {
   flex-direction: row;
@@ -385,7 +346,6 @@ and (max-width: 1030px){
   width: 120%;
   height:5vh;
   opacity: 0.9;
-
 }
 #mc-embedded-subscribe{
   margin-left: 20%;

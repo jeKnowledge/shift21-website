@@ -56,8 +56,6 @@ header {
 }
 /* NAVBAR */
 #nav{
-    top: 0;
-    bottom: 0;
     width: 100%;
     height: 10vh;
     display: grid;
@@ -354,7 +352,13 @@ and (max-width: 1030px){
     height: 5vh;
   }
   #menu{
-    width:40vw;
+    
+  }
+  footer{
+    padding: 5% 8%;
+  }
+  .social_text{
+    display:none;
   }
   
 
