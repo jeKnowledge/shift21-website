@@ -42,7 +42,6 @@
   box-shadow: 0px 0px 18px #7D6AE4;transition: 0.3s;
 } 
 
-
 .answer{
   display: none;
 }
@@ -79,6 +78,9 @@
     padding-top: 12vh;
     height: auto;
   }
+  .question p{
+    width:80%;
+  }
   #pc{
     display: none;
     margin: 0;
@@ -102,8 +104,12 @@
     font-size: 0.9rem;
 
   }
+  .cont_faq{
+border-width:2px;
+  }
+  .cont_faq:hover{
+    border: double 2px transparent;
 
-
-
+  }
 
 }
