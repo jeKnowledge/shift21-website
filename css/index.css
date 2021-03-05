@@ -231,19 +231,19 @@
 #makeitappen_mobile{
   opacity: 1;
   position: absolute;
-  top:73% !important;
+  top:70% !important;
   left: 8vw !important;
   min-width: 70vw;
 }
 #tiger1 {
   left: 5% !important;
   top:14% !important;
-  width: 95vw;
+  width: 90vw;
 }
 #tiger2 {
   left: 5% !important;
   top:14% !important;
-  width: 95vw;
+  width: 90vw;
 }
 
 .whole{

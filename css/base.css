@@ -72,15 +72,20 @@ header {
 #shift{
   width: 40%;
 }
+#nav a{
+  text-align: center;
+  display:block;
+}
 #taikai{
-  min-width:26%;
-  align-self: center;
+  text-align: center;
   margin:auto;
   color:white;
   box-shadow: 0px 0px 14px #7D6AE4;
-  background-color: #7D6AE4;
-  padding: 2.5% 5%;
+  background: linear-gradient(90deg, #942873 -4.12%, #4A2BEC 109.88%);
+  padding: 2.5% 6%;
   border-radius: 10px;
+  text-transform: uppercase;
+  border: none;
 }
 
 #menu{
@@ -235,9 +240,12 @@ footer{
     position: fixed;
     z-index: 3; 
     top:90vh;  
-    left:8vw;
-    font-size: 0.8em;
+    right:8vw;
+    font-size: 0.9em;
     min-width:10%;
+    text-transform: none;
+    padding: 3% 6%;
+    font-family: Poppins;
 
   }
 
