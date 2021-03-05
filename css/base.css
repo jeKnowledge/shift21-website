@@ -73,9 +73,16 @@ header {
   width: 40%;
 }
 #taikai{
-  width:15%;
-  opacity: 0;
+  min-width:26%;
+  align-self: center;
+  margin:auto;
+  color:white;
+  box-shadow: 0px 0px 14px #7D6AE4;
+  background-color: #7D6AE4;
+  padding: 2.5% 5%;
+  border-radius: 10px;
 }
+
 #menu{
   margin: auto;
   display: flex;
@@ -90,7 +97,11 @@ header {
 #menu a:nth-child(2) {
     margin: 0 2.5rem;
 }
-#menu a:hover{
+#taikai:hover{
+  box-shadow: 0px 0px 22px #7D6AE4;
+  transition: 0.3s;
+}
+#menu a:hover {
   color:#c2b5ff;
   text-shadow: 0px 0px 18px #7D6AE4;transition: 0.3s;
 }
@@ -175,10 +186,6 @@ footer{
 #menu_icon{
   display: none;
 }
-#taikai_mobile{
-  display: none;
-
-}
 /* ------------------ MOBILE ------------------ */
 
 @media screen and (min-width: 320px) 
@@ -225,7 +232,13 @@ footer{
 }
 
   #taikai{
-    display: none;
+    position: fixed;
+    z-index: 3; 
+    top:90vh;  
+    left:8vw;
+    font-size: 0.8em;
+    min-width:10%;
+
   }
 
    #menu{
@@ -319,12 +332,7 @@ footer{
       width: 70%;
       flex-wrap: wrap;
     }
-    #taikai_mobile{
-      width: 75%;
-      display: none;
-      padding-top: 10%;
-      margin:auto;
-    }
+ 
 
     .contact{
       text-align: center;

@@ -214,7 +214,6 @@
 #makeitappen_mobile{
   width:80vw;
 }
-
   }
 
 @media screen and (max-width: 480px){
@@ -231,20 +230,19 @@
 }
 #makeitappen_mobile{
   opacity: 1;
-  top:20%;
   position: absolute;
-  top:80% !important;
+  top:73% !important;
   left: 8vw !important;
   min-width: 70vw;
 }
 #tiger1 {
   left: 5% !important;
-  top:22% !important;
+  top:14% !important;
   width: 95vw;
 }
 #tiger2 {
   left: 5% !important;
-  top:22% !important;
+  top:14% !important;
   width: 95vw;
 }
 
