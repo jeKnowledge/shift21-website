@@ -245,7 +245,7 @@ footer{
     text-transform: none;
     padding: 3% 6%;
     font-family: Poppins;
-    backface-visibility: hidden ;
+    -webkit-backface-visibility: hidden;
 
   }
 
