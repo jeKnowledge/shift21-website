@@ -236,7 +236,7 @@ footer{
   #taikai{
     position: fixed;
     z-index: 3; 
-    top:90vh;  
+    margin-top:90vh;  
     right:8vw;
     font-size: 0.9em;
     min-width:10%;
