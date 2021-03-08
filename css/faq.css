@@ -46,7 +46,7 @@
   font-weight: 600;
 }
 
-.question img{
+.question {
   z-index: 2;
   cursor: pointer;
 }
