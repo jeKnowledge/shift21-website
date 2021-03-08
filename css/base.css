@@ -192,6 +192,9 @@ footer{
 
 @media screen and (min-width: 320px) 
   and (max-width: 480px){
+    main{
+      height:100vh;
+    }
     p{
       line-height: 22px;
     }
@@ -239,7 +242,6 @@ footer{
     top:90vh;  
     right:8vw;
     font-size: 0.9em;
-    min-width:10%;
     text-transform: none;
     padding: 3% 6%;
     font-family: Poppins;
