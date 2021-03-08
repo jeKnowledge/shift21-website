@@ -26,7 +26,6 @@ body {
     width: 100vw;
     background-color: #000000;
     overflow-x: hidden; /* Hide horizontal scrollbar */
-
 }
 
 a {
@@ -36,13 +35,11 @@ a {
 h1, h2, h3, h4, h5, h6 {
     color: white;
     font-family: Poppins-bold, sans-serif;
-    font-weight: bold;
 }
 p, button{
   font-family: Hind-light, sans-serif;
   color:#ffffff;
   line-height: 24px;
-
 }
 ul{
 list-style-type: none;
@@ -232,14 +229,14 @@ footer{
 }
 
   #tigre_mobile{
-    padding-top: 5vh;
-    padding-left: 5vw;
+    padding-top: 1vh;
+    padding-left: 20vw;
 }
 
   #taikai{
     position: fixed;
     z-index: 3; 
-    top:90vh;  
+    top:88vh;  
     right:8vw;
     font-size: 0.9em;
     min-width:10%;
@@ -258,7 +255,8 @@ footer{
     height: 100vh;
   }
   #menu a{
-    width: 100vw;
+    width: 85vw;
+    text-align: left;
   }
 
   #menu_icon{
