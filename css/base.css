@@ -36,21 +36,17 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
     font-family: Poppins-bold, sans-serif;
 }
+
 p, button{
   font-family: Hind-light, sans-serif;
   color:#ffffff;
   line-height: 24px;
 }
+
 ul{
 list-style-type: none;
 }
 
-header {
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 /* NAVBAR */
 #nav{
     width: 100%;
@@ -64,15 +60,17 @@ header {
   cursor: pointer;
   align-self: center;
   margin:auto;
-
 }
+
 #shift{
   width: 40%;
 }
+
 #nav a{
   text-align: center;
   display:block;
 }
+
 #taikai{
   text-align: center;
   margin:auto;
@@ -80,6 +78,7 @@ header {
   box-shadow: 0px 0px 14px #7D6AE4;
   background: linear-gradient(90deg, #942873 -4.12%, #4A2BEC 109.88%);
   padding: 2.5% 6%;
+  max-height:25%;
   border-radius: 10px;
   text-transform: uppercase;
   border: none;
@@ -96,29 +95,34 @@ header {
   align-self: center;
   color: white;
 }
+
 #menu a:nth-child(2) {
     margin: 0 2.5rem;
 }
+
 #taikai:hover{
   box-shadow: 0px 0px 22px #7D6AE4;
   transition: 0.3s;
 }
+
 #menu a:hover {
   color:#c2b5ff;
   text-shadow: 0px 0px 18px #7D6AE4;transition: 0.3s;
 }
+
 #menu a:active{
   color:#d0c6ff;
 }
+
 #tigre_mobile{
   display: none;
 }
+
 .lines_background{
   height: auto;
   background-repeat: no-repeat;
   background-size: 100vw;
 }
-
 
 /* FOOTER */
 footer{
@@ -130,14 +134,15 @@ footer{
   align-items: flex-end;
   padding: 5% 10%;
 }
+
 .contact , .social , .made{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 100vw/3;
-
 }
-#cont_info p , .made p {
+
+#contact p , .made p {
   padding-top: 2vh;
 }
 .social{
@@ -152,39 +157,46 @@ footer{
 .social_img a:nth-child(2){
   margin-left: 2vw;
 }
+
 #shift_icon{
   height: 8vh;
   margin:0 2vw ;
 }
+
 .social_img a:nth-child(4){
   margin-right: 2vw;
 }
+
 .social_text{
   display: flex;
   width:120%;
   justify-content: space-between;
   padding-top: 2vh;
 }
+
 .social_text a:hover{
   color:#c2b5ff;
   text-shadow: 0px 0px 18px #7D6AE4;transition: 0.3s;
+}
+.made_img{
+  display: flex;
+  justify-content: flex-end;
 }
 
 .made_img img{
   height: 6vh;
   cursor: pointer;
 }
+
 .made p{
   text-align: right;
 }
+
 .made_img img:nth-child(2){
   padding-left: 12%;
 
 }
-.made_img{
-  display: flex;
-  justify-content: flex-end;
-}
+
 #menu_icon{
   display: none;
 }
@@ -192,44 +204,37 @@ footer{
 
 @media screen and (min-width: 320px) 
   and (max-width: 480px){
-    main{
-      height:100vh;
-    }
+ 
     p{
       line-height: 22px;
     }
-    .section-main {
-      width: 90%;
-  }
 
-  .section-title h2 {
-      font-size: 20px;
-      line-height: 1.5rem;
+  #scene{
+    z-index: 1;
   }
-#scene{
-  z-index: 1;
-}
   #nav{
       height: 11vh;
       position: absolute;
       width:100vw;
       grid-template-columns: 1fr 1fr;
       position: absolute;
-}
-#shift{
-  z-index: 4;
-  width:40vw;
-}
-#nav img:nth-child(2), #nav img:nth-child(3) {
-        padding: 4vh 0;
-}
-#nav img:nth-child(2) {
-  margin-left:8vw;
-}
+  }
+  #shift{
+    z-index: 4;
+    width:40vw;
+  }
 
-#nav img:nth-child(3) {
-  margin-right:8vw;
-}
+  #nav img:nth-child(2), #nav img:nth-child(3) {
+          padding: 4vh 0;
+  }
+
+  #nav img:nth-child(2) {
+    margin-left:8vw;
+  }
+
+  #nav img:nth-child(3) {
+    margin-right:8vw;
+  }
 
   #tigre_mobile{
     padding-top: 1vh;
@@ -239,24 +244,24 @@ footer{
   #taikai{
     position: fixed;
     z-index: 3; 
-    top:90vh;  
+    top:90vh; 
     right:8vw;
     font-size: 0.9em;
     text-transform: none;
     padding: 3% 6%;
     font-family: Poppins;
     -webkit-backface-visibility: hidden;
-
   }
 
    #menu{
-     z-index: 3;
+    z-index: 3;
     display: none;
     width:100%;
     padding: 20vh 8vw 20vh 8vw ;
     position: absolute;
     height: 100vh;
   }
+  
   #menu a{
     width: 85vw;
     text-align: left;
@@ -265,7 +270,7 @@ footer{
   #menu_icon{
     right:0%;
     z-index:4;
-    align-self: flex-end;  }
+  }
 
   #menu a{
     display: block;
@@ -277,18 +282,12 @@ footer{
 
   #menu a:nth-child(2) {
     margin: 0 ;
-}
+  }
+
   #menu_icon{
     display: inline;
   }
-    .section-main {
-        width: 80%;
-    }
 
-    .section-title h2 {
-        font-size: 1.5rem;
-        line-height: 28px;
-    }
 
     /* FOOTER */
 
@@ -299,6 +298,7 @@ footer{
       font-size: 0.7rem;
       align-items: center;
     }
+
     .contact , .social , .made{
       width: 90%;
     }
@@ -342,7 +342,6 @@ footer{
       flex-wrap: wrap;
     }
  
-
     .contact{
       text-align: center;
       font-size: 1.3em;

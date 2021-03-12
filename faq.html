@@ -10,7 +10,7 @@
   <meta name="robots" content="noydir, noodp">
   <meta name="description" content="Shift Appens - Make It Appen">
   <meta name="keywords"
-    content="shift, appens, hackathon, coding, talks, 48hours, coimbra, 2020, apps, design, 13, April, jeKnowledge, nei, dei, cmc">
+    content="shift, appens,shiftappens hackathon, coding, talks, 48hours, coimbra, 2020, apps, design, 13, April, jeKnowledge, nei, dei, cmc">
   <meta name="author" content="Joana Sousa">
   <meta property="og:title" content="Shift Appens" />
   <meta property="og:description"
@@ -30,30 +30,22 @@
 </head>
 
 <body>
-
     <div class="lines_background">
       <nav>
         <div id="nav">
-
-
-            <div id="menu">
-              <a href="about.html">ABOUT US</a>
-              <a href="past.html">PAST</a>
-              <a href="faq.html">FAQ</a>
-              <img id="tigre_mobile" src="images/tigre_mobile.svg" alt="tiger">
-    
-            </div>
+          <div id="menu">
+            <a href="about.html">ABOUT US</a>
+            <a href="past.html">PAST</a>
+            <a href="faq.html">FAQ</a>
+            <img id="tigre_mobile" src="images/tigre_mobile.svg" alt="tiger">
+           </div>
           <img id="shift" onclick="window.location.href = 'index.html';" src="images/logo_c.png" alt="logo">
           <img id="menu_icon" onclick=showMenu() src="images/menu.png" alt="menu">
-          <a href=" " id="taikai">Register Here!</a>
-
-
-  </div>
+          <a href="https://taikai.network/en/shift-appens/challenges/shiftappens2021 " id="taikai">Register Here!</a>
+        </div>
       </nav>
 <main>
 <section class="faqs">
-
-
   <h1 id='pc'> FREQUENTLY ASKED QUESTIONS</h1>
   <h1 id='mobile'> FAQ</h1>
 
@@ -87,6 +79,7 @@
         <p>Any student, professional or enthusiast can be part of it! You can team up with your closest friends, your family, your co-workers, someone who’s willing to put their heart and soul into this adventure!</p>
       </div>
     </div>
+
     <div class="cont_faq">
       <div class="question">
         <p>How many members can a team have?</p>
@@ -107,7 +100,6 @@
       </div>
     </div>
 
-
     <div class="cont_faq">
       <div class="question">
         <p>How much will it cost?</p>
@@ -118,31 +110,24 @@
       </div>
     </div>
 
-
 </section>
+</main>
+
 <footer>
   <div class="contact">
-    <div id=cont_info>
       <h3>Contact us</h3>
       <p>+351 913 847 824
-        <br> +351 964 302 766
-        <br>geral@shiftappens.com</p>
-    </div>
+      <br> +351 964 302 766
+      <br>geral@shiftappens.com</p>
   </div>
 
   <div class="social">
     <div class="social_img">
-      <a class="social_i" href="https://twitter.com/shiftappens"> <img src="images/twitter.svg" alt="logo_twitter">
-      </a>
-      <a class="social_i" href="https://www.facebook.com/whereshiftappens"> <img src="images/facebook.svg"
-          alt="logo_facebook"> </a>
+      <a class="social_i" href="https://twitter.com/shiftappens"> <img src="images/twitter.svg" alt="logo_twitter"> </a>
+      <a class="social_i" href="https://www.facebook.com/whereshiftappens"> <img src="images/facebook.svg" alt="logo_facebook"> </a>
       <img id="shift_icon" onclick="window.location.href = 'index.html';" src="images/logo_icon.png" alt="logo">
-      <a class="social_i" href="https://www.instagram.com/shiftappens"> <img src="images/insta.svg"
-          alt="logo_instagram"> </a>
-      <a class="social_i" href="https://www.linkedin.com/company/shift-appens"> <img src="images/linkedin.svg"
-          alt="logo_linkedin"> </a>
-
-
+      <a class="social_i" href="https://www.instagram.com/shiftappens"> <img src="images/insta.svg"alt="logo_instagram"> </a>
+      <a class="social_i" href="https://www.linkedin.com/company/shift-appens"> <img src="images/linkedin.svg"alt="logo_linkedin"> </a>
     </div>
 
     <div class="social_text">
@@ -151,37 +136,28 @@
       <a href="past.html">PAST</a>
       <a href="about.html">ABOUT US</a>
     </div>
-
   </div>
+
   <div class="made">
-    <div id="made_info">
       <div class="made_img">
-        <img src="images/jeK.svg" onclick="window.location.href = 'https://jeknowledge.pt'" alt="logo_jek">
         <img src="images/nei.svg" onclick="window.location.href = 'https://nei.dei.uc.pt'" alt="logo_nei">
+        <img src="images/jeK.svg" onclick="window.location.href = 'https://jeknowledge.pt'" alt="logo_jek">
       </div>
       <p>Made with <a style="color:#EF376A">love</a> by us</p>
-    </div>
   </div>
-
 </footer>
-  </main>
-
 </body>
+
 <script>
+
   var cont= document.getElementsByClassName("cont_faq")
   var question = document.getElementsByClassName("question");
   var question_img = document.getElementsByClassName("icon");
-  var icone= document.getElementById("icone");
-  var i;
 
-for (i = 0; i < question.length; i++) {
-
+  for (i = 0; i < question.length; i++) {
   question[i].addEventListener("click", function() {
     this.classList.toggle("active");
-
     var myimg = this.getElementsByTagName('img')[0];
-
-
     var abre =this.nextElementSibling;
     var answer = this.nextElementSibling;
     var img= this.nextElementSibling;
@@ -190,16 +166,11 @@ for (i = 0; i < question.length; i++) {
     if (answer.style.display === "block") {
       answer.style.display = "none";
       myimg.src= "images/open.svg"
-      
-
     } else {
       answer.style.display = "block";
       myimg.src= "images/close.svg"
-
-
     }
   });
-}
-
+  }
 </script>
 </html>
