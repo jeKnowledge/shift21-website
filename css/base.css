@@ -208,7 +208,7 @@ footer{
 /* ------------------ MOBILE ------------------ */
 
 @media screen and (min-width: 320px) 
-  and (max-width: 480px){
+  and (max-width: 500px){
  
     p{
       line-height: 22px;
@@ -240,6 +240,10 @@ footer{
   #nav img:nth-child(3) {
     margin-right:8vw;
   }
+  #menu a:nth-child(3){
+    margin-left: 0;
+  }
+
 
   #tigre_mobile{
     padding-top: 1vh;
