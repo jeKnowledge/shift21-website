@@ -98,7 +98,10 @@ list-style-type: none;
 }
 
 #menu a:nth-child(2) {
-    margin:0 2.5rem;
+    margin-left:2.5rem;
+}
+#menu a:nth-child(3) {
+  margin: 0 2.5rem;
 }
 
 
