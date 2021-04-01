@@ -230,7 +230,7 @@
 }
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 700px){
 
 .gradient_background {
   background-image: url("../images/background1_mobile.png");
@@ -246,7 +246,7 @@
   opacity: 1;
   position: absolute;
   top:65% !important;
-  left: 1% !important;
+  left: 0 !important;
   min-width: 70vw;
 }
 #tiger1 {
@@ -351,7 +351,7 @@ width:40vw;
 }
 
 /* ------------------ IPAD ------------------ */
-@media screen and (min-width: 1000px)and (max-width: 1030px){ 
+@media screen and (min-width: 760px)and (max-width: 1030px){ 
 
  .lines_background {
   background-image: url("../images/background_index_mobile.png");
