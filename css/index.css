@@ -1,4 +1,4 @@
-k/* TIGRE E TEXTO*/
+/* TIGRE E TEXTO*/
 .hero {
   height: 90vh;
   width: 100%;
@@ -76,11 +76,13 @@ k/* TIGRE E TEXTO*/
 .prizes, .partner{
   margin-top: 20vh;
 }
+
 .content-prizes{
   display: flex;
   justify-content: space-between;
   margin-top: 10%;
   width:45vw;
+  height: 26vh;
 }
 
 .cont{
@@ -100,8 +102,8 @@ k/* TIGRE E TEXTO*/
   font-weight: 600;
 }
 .content-prizes img{
-  width:30%;
-  border: 5px solid #fff;
+  height: inherit;
+  border: 3px solid #fff;
   border-radius: 8px ;
   
 }

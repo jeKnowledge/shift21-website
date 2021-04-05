@@ -147,6 +147,9 @@
     .cont_faq:hover{
       border: double 2px transparent;
     }
+    .answer li{
+      color:#ffffff;
+    }
 
     .download{
         margin-bottom:  5%;
