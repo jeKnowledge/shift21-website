@@ -63,6 +63,10 @@
   .answer ul{
     font-weight: Hind;
     padding-top: 2%;
+
+  }
+  .answer li{
+    color:#ffffff;
   }
   .download{
       margin-bottom:  2%;
@@ -147,9 +151,7 @@
     .cont_faq:hover{
       border: double 2px transparent;
     }
-    .answer li{
-      color:#ffffff;
-    }
+    
 
     .download{
         margin-bottom:  5%;

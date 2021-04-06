@@ -20,7 +20,6 @@
   z-index: 2;
   width: 90vw;
   margin: auto;
-  padding-top: 10%;
 }
 
 #tiger1 {
@@ -49,7 +48,7 @@
 /* MAIN */
 
 .lines_background {
-  background-image: url("../images/background_index_c.png");
+  background-image: url("../images/Fundo-3.png");
   z-index: -2;
 }
 
@@ -78,11 +77,10 @@
 }
 
 .content-prizes{
-  display: flex;
-  justify-content: space-between;
-  margin-top: 10%;
   width:45vw;
-  height: 26vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 10%;
 }
 
 .cont{
@@ -102,7 +100,7 @@
   font-weight: 600;
 }
 .content-prizes img{
-  height: inherit;
+  width: 95%;
   border: 3px solid #fff;
   border-radius: 8px ;
   
@@ -242,9 +240,10 @@
 #makeitappen_mobile{
   width:80vw;
 }
+
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 600px){
 
 .gradient_background {
   background-image: url("../images/background1_mobile.png");
@@ -259,16 +258,16 @@
 #makeitappen_mobile{
   opacity: 1;
   padding-top: 110%;
-  margin:auto;
   min-width: 80vw;
+  margin:auto;
 }
 #tiger1 {
-  margin-top: 20%;
+  margin-top: 25%;
   left: 1% !important;
   width: 100vw;
 }
 #tiger2 {
-  margin-top: 20%;
+  margin-top: 25%;
   left: 0% !important;
   width: 100vw;
 }
@@ -372,7 +371,7 @@ width:40vw;
 }
 
 /* ------------------ IPAD ------------------ */
-@media screen and (min-width: 760px)and (max-width: 1030px){ 
+@media screen and (min-width: 600px)and (max-width: 1030px){ 
 
  .lines_background {
   background-image: url("../images/background_index_mobile.png");

@@ -248,7 +248,6 @@ footer{
     margin-left: 0;
   }
 
-
   #tigre_mobile{
     padding-top: 1vh;
     padding-left: 20vw;
@@ -261,14 +260,14 @@ footer{
     right:8vw;
     font-size: 0.9em;
     text-transform: none;
-    padding: 3% 6%;
     font-family: Poppins;
+    padding: 0 4%;
     -webkit-backface-visibility: hidden;
   }
 
    #menu_nav{
+    z-index: 3;
     display: none;
-    z-index: 2;
     width:100%;
     padding: 15vh 8vw 20vh 8vw ;
     position: absolute;
